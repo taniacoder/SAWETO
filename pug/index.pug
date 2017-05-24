@@ -1,0 +1,469 @@
+doctype html
+html
+	head
+		title MDE SAWETO PERÚ
+		meta(name='keywords', content='Bonfire Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+		//bootstrap
+		link(href='css/bootstrap.css', rel='stylesheet', type='text/css', media='all')
+		// jQuery (necessary for Bootstrap's JavaScript plugins)
+		// animate.css
+		link(href='css/animate.css', rel='stylesheet', type='text/css', media='all')
+		// mystyles
+		link(href='css/main.css', rel='stylesheet', type='text/css', media='all')
+		// fonts
+		link(href='css/fonts.css', rel='stylesheet', type='text/css')
+		//favicon
+		//link(rel="shortcut icon",href="http://larepublica.pe/favicon.ico")
+		script(src='js/jquery.min.js')
+		// olw-carousel
+		//link( rel="stylesheet" href="assets/owl.carousel.min.css")
+		//link(rel="stylesheet" href="assets/owl.theme.default.min.css")
+		//script(src="js/owl.carousel.js")
+		//wow.js-animate
+		//script(src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js')
+		//link de wow animate especifico 
+		script(src='js/min.js')
+		script(src="js/wow.min.js")
+		script.
+			new WOW().init();
+
+	body 
+		section.header
+			.container
+				.row
+					.col-md-4.col-xs-12.col-sm-12
+						img(src="images/logo.png")
+					.col-md-8.col-xs-12.col-sm-12
+						div.head-right
+							.idiomas
+								ul
+									li
+										a.icon_peru(href='') Español
+									li
+										a.icon_euu(href='') Ingles
+							.redes-seeker
+								.logo-mundial
+									img(src="images/logo-banco-mundial.png" style="    width: 76px;" alt=" ")
+								ul.social-in
+									li
+										a(href='#')
+											i.facebook  
+									li
+										a(href='#')
+											i.twitter  
+									li
+										a(href='#')
+											i.youtube  
+									li
+										a(href='#')
+											i.rs  
+								.search(style='margin-top: 10px;')
+									form
+										input(type='text', value='Buscador', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = '';}")
+										input(type='submit', value='')
+
+		section.menu
+
+				nav.navbar.navbar-default
+					.container
+						// Brand and toggle get grouped for better mobile display
+						.navbar-header
+							button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+								span.sr-only Toggle navigation
+								span.icon-bar
+								span.icon-bar
+								span.icon-bar
+							.redes-seeker.collapsed
+								ul.social-in
+									li
+										a(href='#')
+											i.facebook  
+									li
+										a(href='#')
+											i.twitter  
+									li
+										a(href='#')
+											i.youtube  
+									li
+										a(href='#')
+											i.rs  
+						// Collect the nav links, forms, and other content for toggling
+						#bs-example-navbar-collapse-1.collapse.navbar-collapse
+							ul.nav-flex
+								li
+									a(href='#') MADE SAWETO
+								li
+									a(href='#') TERRITORIALIDAD
+								li
+									a(href='#') MANEJO FORESTAL
+								li
+									a(href='#') GOBERNANZA
+								li
+									a(href='#') COMUNICACIONES 
+								li
+									a(href='#') TRANSAPAREMCIA
+								li
+									a(href='#') GOBERNANZA
+						// /.navbar-collapse
+					// /.container-fluid
+
+		section.slide
+			#carousel
+				i.fa.fa-quote-left.fa-4x
+				#banner-carousel.carousel.slide(data-ride='carousel', data-interval='3000')
+					// Carousel indicators
+					ol.carousel-indicators
+						li.active(data-target='#banner-carousel', data-slide-to='0')
+						li(data-target='#banner-carousel', data-slide-to='1')
+						li(data-target='#banner-carousel', data-slide-to='2')
+						li(data-target='#banner-carousel', data-slide-to='3')
+					// Carousel items
+					.carousel-inner
+						.active.item
+							img(src='images/banner/banner-1.jpg', alt='')
+							.banner-text
+								div.box-trans
+									h2 BUSCAMOS GARANTIZAR
+									h3 LA SEGURIDAD JURÍDICA DE LOS PUEBLOS INDÍGENAS
+								
+						.item
+							img(src='images/banner/banner-2.jpg', alt='')
+							.banner-text
+								div.box-trans
+									h2 BUSCAMOS GARANTIZAR
+									h3 LA SEGURIDAD JURÍDICA DE LOS PUEBLOS INDÍGENAS
+								
+						.item
+							img(src='images/banner/banner-3.jpg', alt='')
+							.banner-text
+								div.box-trans
+									h2 BUSCAMOS GARANTIZAR
+									h3 LA SEGURIDAD JURÍDICA DE LOS PUEBLOS INDÍGENAS
+								
+						.item
+							img(src='images/banner/banner-4.jpg', alt='')
+							.banner-text
+								div.box-trans
+									h2 BUSCAMOS GARANTIZAR
+									h3 LA SEGURIDAD JURÍDICA DE LOS PUEBLOS INDÍGENAS
+								
+		//mde-saweto
+		section.mde
+			.container
+				.row
+					.col-md-2.wow.fadeInLeft(data-wow-offset="200" data-wow-delay="0.1s")
+						div.icons-aidesep
+					.col-md-8.anim.serie.activa.wow.fadeInUp(data-wow-offset="200" data-wow-delay="0.2s")
+						h3 MDE SAWETO
+						p El MDE Saweto Perú, es una iniciativa diseñada por las organizaciones indígenas amazónicas nacionales: La Asociación Interétnica de Desarrollo de la Selva Peruana (AIDESEP) y la Confederación de Nacionalidades Amazónicas del Perú (CONAP).
+					.col-md-2.wow.fadeInRight(data-wow-offset="200" data-wow-delay="0.1s")
+						div.icons-conap
+
+		//noticias
+		section.noticias
+			.container
+				.row
+					h3 NOTICIAS
+
+					.col-md-4.wow.zoomIn(data-wow-offset="25" data-wow-delay="0s")
+						.col-md
+							a.link-hover(href='single.html')
+								img(src='images/pi1.jpg', alt='')
+							.top-content
+								h5
+									a(href='single.html') LOREM IPSUN DOLOR MEIN AT
+								p.fecha-index-noticia 25 de Abril del 2017
+								p.text-fecha-index-noticia Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sed do eiusmod tem por inci didunt ut labore et dolore...
+								.white
+									a.btn-index-noticias(href='single.html') LEER MÁS
+									.clearfix
+					.col-md-4.wow.zoomIn(data-wow-offset="25" data-wow-delay="0.1s")
+						.col-md
+							a.link-hover(href='single.html')
+								img(src='images/pi2.jpg', alt='')
+							.top-content
+								h5
+									a(href='single.html') LOREM IPSUN DOLOR MEIN AT
+								p.fecha-index-noticia 25 de Abril del 2017
+								p.text-fecha-index-noticia
+									| Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sed do eiusmod tem por inci didunt ut labore et dolore...
+								.white
+									a.btn-index-noticias(href='single.html') LEER MÁS
+									.clearfix
+					.col-md-4.wow.zoomIn(data-wow-offset="25" data-wow-delay="0.2s")
+						.col-md
+							a.link-hover(href='single.html')
+								img(src='images/pi3.jpg', alt='')
+							.top-content
+								h5
+									a(href='single.html') LOREM IPSUN DOLOR MEIN AT
+								p.fecha-index-noticia 25 de Abril del 2017
+								p.text-fecha-index-noticia
+									| Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sed do eiusmod tem por inci didunt ut labore et dolore...
+								.white
+									a.btn-index-noticias(href='single.html') LEER MÁS
+									.clearfix
+		section.ejecutoras
+			section#carousel
+				.container
+					.content
+						.col-md-12.md-col
+							h3 EJECUTORAS DE SUBPROYECTOS (EPs)
+							p(style='margin-bottom: 60px')
+								| Las EPs son las 18 federaciones y organizaciones regionales indígenas y sus comunidades miembros de AIDESEP y CONAP, quienes recibirán recursos para la implementación de subproyectos en sus respectivos ámbitos de intervención.
+
+					.row
+						i.fa.fa-quote-left.fa-4x
+						#fade-quote-carousel.carousel.slide(data-ride='carousel', data-interval='100')
+							// Carousel indicators
+							ol.carousel-indicators
+								li.active(data-target='#fade-quote-carousel', data-slide-to='0')
+								li(data-target='#fade-quote-carousel', data-slide-to='1')
+							// Carousel items
+							.carousel-inner
+								.active.item
+									.row 
+										.col-md-6
+											a( href ="#").wow.fadeInRight(data-wow-offset="20" data-wow-delay="0.1s")
+												.box-item
+													h3 AIDESEP
+													p Asociación Interétnica de Desarrollo de la Selva Peruana
+											a( href ="#")
+												.box-item
+													h3 AIDESEP
+													p Asociación Interétnica de Desarrollo de la Selva Peruana
+											a( href ="#")
+												.box-item
+													h3 AIDESEP
+													p Asociación Interétnica de Desarrollo de la Selva Peruana
+											a( href ="#")
+												.box-item
+													h3 AIDESEP
+													p Asociación Interétnica de Desarrollo de la Selva Peruana	
+											a( href ="#")
+												.box-item
+													h3 AIDESEP
+													p Asociación Interétnica de Desarrollo de la Selva Peruana													
+										.col-md-6
+											a( href ="#")
+												.box-item
+													h3 AIDESEP
+													p Asociación Interétnica de Desarrollo de la Selva Peruana
+											a( href ="#")
+												.box-item
+													h3 AIDESEP
+													p Asociación Interétnica de Desarrollo de la Selva Peruana
+											a( href ="#")
+												.box-item
+													h3 AIDESEP
+													p Asociación Interétnica de Desarrollo de la Selva Peruana
+											a( href ="#")
+												.box-item
+													h3 AIDESEP
+													p Asociación Interétnica de Desarrollo de la Selva Peruana
+											a( href ="#")
+												.box-item
+													h3 AIDESEP
+													p Asociación Interétnica de Desarrollo de la Selva Peruana									
+								.item
+							
+										.col-md-6
+											a( href ="#")
+												.box-item
+													h3 AIDESEP
+													p Asociación Interétnica de Desarrollo de la Selva Peruana
+											a( href ="#")
+												.box-item
+													h3 AIDESEP
+													p Asociación Interétnica de Desarrollo de la Selva Peruana
+											a( href ="#")
+												.box-item
+													h3 AIDESEP
+													p Asociación Interétnica de Desarrollo de la Selva Peruana
+											a( href ="#")
+												.box-item
+													h3 AIDESEP
+													p Asociación Interétnica de Desarrollo de la Selva Peruana	
+											a( href ="#")
+												.box-item
+													h3 AIDESEP
+													p Asociación Interétnica de Desarrollo de la Selva Peruana					
+										.col-md-6
+											a( href ="#")
+												.box-item
+													h3 AIDESEP
+													p Asociación Interétnica de Desarrollo de la Selva Peruana
+											a( href ="#")
+												.box-item
+													h3 AIDESEP
+													p Asociación Interétnica de Desarrollo de la Selva Peruana
+											a( href ="#")
+												.box-item
+													h3 AIDESEP
+													p Asociación Interétnica de Desarrollo de la Selva Peruana
+											a( href ="#")
+												.box-item
+													h3 AIDESEP
+													p Asociación Interétnica de Desarrollo de la Selva Peruana
+											a( href ="#")
+												.box-item
+													h3 AIDESEP
+													p Asociación Interétnica de Desarrollo de la Selva Peruana	
+
+
+		section.boxstcm
+		section.index-enlaces
+			.container
+				.content
+					.content-top-in
+						.col-md-4.md-col.wow.zoomIn(data-wow-offset="20" data-wow-delay="0s")
+							.col-md
+								a.link-hover(href='single.html')
+									img(src='images/pic1.jpg', alt='')
+								.top-content(style='margin-top: 20px')
+									.icons_enlace
+										.icon_hoja
+									h5
+										a(href='single.html') TRANSPARENCIA
+									.white.centrar-div
+										a.btn-index-enlaces(href='single.html') SABER MÁS
+										.clearfix
+						.col-md-4.md-col.wow.zoomIn(data-wow-offset="20" data-wow-delay="0.1s")
+							.col-md
+								a.link-hover(href='single.html')
+									img(src='images/pic2.jpg', alt='')
+								.top-content(style='margin-top: 20px')
+									.icons_enlace
+										.icon_comu
+									h5
+										a(href='single.html') COMUNICACIONES
+									.white.centrar-div
+										a.btn-index-enlaces(href='single.html') VER MÁS
+										.clearfix
+						.col-md-4.md-col.wow.zoomIn(data-wow-offset="20" data-wow-delay="0.2s")
+							.col-md
+								a.link-hover(href='single.html')
+									img(src='images/pic3.jpg', alt='')
+								.top-content(style='margin-top: 20px')
+									.icons_enlace
+										.icon_mapa
+									h5
+										a(href='single.html') MAPAS
+									.white.centrar-div
+										a.btn-index-enlaces(href='single.html') VER MAPA
+										.clearfix
+						.clearfix
+		.container
+			.content
+				// 
+				.content-middle
+					.content-middle-in
+						ul#flexiselDemo1
+							li
+								img(src='images/ap.jpg')
+							li
+								img(src='images/ap1.jpg')
+							li
+								img(src='images/ap2.jpg')
+							li
+								img(src='images/ap3.jpg')
+							li
+								img(src='images/ap4.jpg')
+							li
+								
+								img(src='images/ap5.jpg')
+						script(type='text/javascript').
+							$(window).load(function() {
+								$("#flexiselDemo1").flexisel({
+									visibleItems: 6,
+									animationSpeed: 1000,
+									autoPlay: true,
+									autoPlaySpeed: 3000,
+									pauseOnHover: true,
+									enableResponsiveBreakpoints: true,
+									responsiveBreakpoints: {
+										portrait: {
+											changePoint:480,
+											visibleItems: 1
+										},
+										landscape: {
+											changePoint:640,
+											visibleItems: 2
+										},
+										tablet: {
+											changePoint:768,
+											visibleItems: 3
+										}
+									}
+								});
+							});
+						script(type="text/javascript" src="js/jquery.flexisel.js")
+
+				// 
+
+		// 
+		section.suscribirse
+			.container
+				.content.posicion-verde
+					.cuadro-verde
+						p  TE INVITAMOS A INCRIBIRTE Y RECIBIR MÁS INFORMACIÓN DE ESTE Y PRÓXIMOS PROYECTOS
+		section.buscar_curso
+			.container.clearfix.text-center-sm.text-center-xs
+				.col-md-5.col-sm-5.col-xs-12
+					.icon_suscribirse
+					.interesado-box
+						h4 ¡SUSCRÍBETE!
+						p Recibe más información y novedades
+				// Doctor Bio #1 Ends
+				// Doctor Bio #2 Starts
+				.col-md-6.col-sm-6.col-xs-12
+					.row
+						.col-md-6
+							.interesado-box
+								form.newsletter(action='#')
+									.form-group.margin_cero
+										input.form-control(type='email', placeholder='Escribe aquí tu correo electrónico...')
+						.col-md-6
+							.interesado-box
+								form.newsletter(action='#')
+										.form-group.margin_cero
+											input.form-control(type='email', placeholder='Escribe aquí tu Nº Celular...')
+				// Doctor Bio #2 Ends
+				// Doctor Bio #3 Starts
+				.col-md-1.col-sm-1.col-xs-12
+							.interesado-box
+								button.btn_suscribirse(type='submit') ENVIAR
+		section.footer
+		.footer
+			.footer-top
+				.container
+					.col-md-5.col-sm-5.col-xs-12.footer-in
+						.icon_direccion
+						p  Agencia Nacional Ejecutora - WWF Perú Calle Trinidad Morán 853, Lince - Lima
+					.col-md-4.col-sm-4.col-xs-12.footer-in
+						.icon_correo
+						p ESCRÍBENOS A: mde@mdesawetoperu.com
+					.col-md-3.col-sm-12.col-xs-12.footer-in
+						.icon_fono
+						p.fono (+511) 440 5550
+					.clearfix
+			// 
+		.footer-middle
+			.container
+				.row
+					.col-md-12
+						.gracias-a
+							img(src="images/gracias-a.png")
+				.row
+					.col-md-6.col-sm-6.col-xs-12
+						p.footer-class Copyright 2017 - Saweto
+					.col-md-6.col-sm-6.col-xs-12
+						p.footer-class-2 Diseño y desarrollo: Raul Chavez Inche, Lima - Perú
+				.clearfix
+
+		script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+
+
+		script(src='js/bootstrap.min.js')

@@ -1,0 +1,267 @@
+//*header*//
+section.header {
+	padding: 30px 0 10px;
+}
+.head-right {
+	
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+.idiomas {
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    ul {
+		display: flex;
+		justify-content: flex-end;
+		list-style-type: none;
+		li{
+			font-size: 12px;
+    		a {
+    			color: #666;
+    		}
+		}
+    }
+}
+
+.icon_euu {
+    background: url(../images/ingles.svg) no-repeat;
+    padding-left: 30px;
+    margin-left: 20px;
+}
+.icon_euu:hover {
+    background: url(../images/ingles.svg) no-repeat;
+    padding-left: 30px;
+    margin-left: 20px;
+}
+.icon_peru {
+    background: url(../images/peru.svg) no-repeat;
+    padding-left: 30px;
+}
+.icon_peru:hover {
+    background: url(../images/peru.svg) no-repeat;
+    padding-left: 30px;
+}
+
+/*redes*/
+.redes-seeker {
+	padding: 0px 0 15px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	ul {
+		display: flex;
+		justify-content: flex-end;
+		list-style-type: none;
+	}
+
+}
+ul.social-in li i {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 3px;
+}
+
+ul.social-in li i.facebook {
+    background: url(../images/social_facebook.png)no-repeat;
+}
+ul.social-in li i.facebook:hover {
+    background: url(../images/facebook-hover.svg)no-repeat;
+}
+ul.social-in li i.twitter {
+    background: url(../images/social_twitter.png)no-repeat;
+}
+ul.social-in li i.twitter:hover {
+    background: url(../images/twiters-hover.svg)no-repeat;
+}
+ul.social-in li i.youtube {
+    background: url(../images/social_youtube.png)no-repeat;
+}
+ul.social-in li i.youtube:hover {
+    background: url(../images/youtube-hover.svg)no-repeat;
+}
+ul.social-in li i.rs {
+    background: url(../images/social_rs.png)no-repeat;
+}
+ul.social-in li i.rs:hover {
+    background: url(../images/flickr-hover.svg)no-repeat;
+}
+.search {
+    float: right;
+    position: relative;
+    width: auto;
+    border: 2px solid #dbdbdb;
+    background: #fff;
+    border-radius: 4px;
+    margin-left: 30px;
+    height: 40px;
+}
+.search input[type="text"] {
+    outline: none;
+    padding: 10.5px 15px;
+    background: none;
+    width: 250px;
+    border: none;
+    font-size: 0.8em;
+    color: #4c4c4c;
+}
+.search input[type="submit"] {
+    width: 40px;
+    height: 40px;
+    background: url(../images/btn_buscar.png) 0px 0px no-repeat;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    outline: none;
+    top: -2px;
+    right: -2px;
+}
+/*/*/
+/*menu*/
+.navbar-default {
+     border: none;
+    background: none;
+        
+}
+.navbar {
+    margin-bottom: 0px;
+}
+.collapse.navbar-collapse {
+	border-top: 1px solid #ddd;
+}
+.nav-flex {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	li {
+		display: flex;
+		a {
+		text-decoration: none;
+	    border: none;
+	    font-size: 17px;
+	    color: #432918;
+	    padding: 14px 10px;
+		}
+		a:hover {
+	    	font-weight: bold;
+	    	/*color: #fde3bf;*/
+	    }
+	}
+}
+/*-hover-on-*/
+.nav-flex li {
+	position: relative;
+    a:before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        height: 5px;
+        width: 100%;
+        background-color: #ec8b00;
+        transform-origin: left top;
+        transform: scale(0, 1);
+        transition: color 0.1s,transform 1s ease-out;
+    }
+     a:active::before {
+        background-color: #ec8b00;
+    }
+
+
+    a:hover::before, a:focus::before {
+        transform-origin: left top;
+        transform: scale(1, 1);
+    }
+}
+/*.nav-flex li {
+    background: url(../images/hover-menu.png) bottom center no-repeat;
+    color: #000;
+    
+    -webkit-transition: width 2s;
+    transition: width 2s;
+    background-position-x: -300px;
+}
+
+*/
+.nav-flex li:hover {
+	background:#579e32;
+    color: #fff;
+    font-weight: 900;
+    transition: all 1.0s ease-in;
+}
+/*-hover-end--*/
+.navbar-header .redes-seeker {
+	display: none;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background: none;
+	border: none;
+}
+.navbar-default .navbar-toggle {
+border: none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 37px;
+    height: 4px;
+    border-radius: 1px;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 6px;
+}
+@media (max-width: 1200px){
+	.nav-flex li a {
+	    font-size: 13px;
+	}
+}
+@media (max-width: 992px){
+	.nav-flex li a {
+	    font-size: 11px;
+	}
+}
+
+@media (max-width: 768px) {
+	.nav-flex {
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		li {
+			display: flex;
+			justify-content: center;
+			a {
+			text-decoration: none;
+		    border: none;
+		    font-size: 15px;
+		    color: #ffffff;
+		    padding: 14px 0px;
+			}
+		}
+	}
+	.navbar-default {
+	    background-color: #3C7B19;
+	}
+
+}
+
+@media (max-width: 560px) {
+ .head-right .redes-seeker ul {
+ 	display: none;
+ }
+ .navbar-header .redes-seeker {
+	display: flex;
+	justify-content: flex-start;
+    padding: 9px 0 0 9px;
+}
+}
+@media (max-width: 391px) {
+	.search input[type="text"] {
+    width: 178px;
+	}
+}

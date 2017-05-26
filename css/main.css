@@ -31,7 +31,8 @@ a.link-hover:before {
   background-color: #cd8318;
   opacity: 0.75;
   height: 100%;
-  display: none; }
+  display: none;
+  -webkit-transition: 0.3s all; }
 
 a.link-hover:after {
   font-family: 'Glyphicons Halflings';
@@ -50,10 +51,12 @@ a.link-hover:after {
   top: 44%;
   font-size: 40px;
   color: #fff;
-  display: none; }
+  display: none;
+  -webkit-transition: 0.3s all; }
 
 a.link-hover:hover:before, a.link-hover:hover:after {
-  display: block; }
+  display: block;
+  -webkit-transition: 0.3s all; }
 
 section.header {
   padding: 30px 0 10px; }
@@ -80,7 +83,7 @@ ul {
         color: #666; }
 
 .icon_peru {
-  background: url(../images/peru-gris.svg) no-repeat;
+  background: url(../images/peru.svg) no-repeat;
   padding-left: 30px; }
 
 .icon_peru:hover, .icon_peru:active, .icon_peru:focus {
@@ -133,8 +136,7 @@ ul {
         height: 35px;
         width: 35px;
         text-align: center;
-        line-height: 40px;
-        box-shadow: 1px 0 1px rgba(0, 0, 0, 0.5); }
+        line-height: 40px; }
 
 .redes-seeker .social-in .icono-primary:hover {
   display: inline-block;
@@ -147,8 +149,7 @@ ul {
   height: 35px;
   width: 35px;
   text-align: center;
-  line-height: 40px;
-  box-shadow: 1px 0 1px rgba(0, 0, 0, 0.5); }
+  line-height: 40px; }
 
 .redes-seeker .social-in li i {
   display: inline-block;
@@ -218,7 +219,8 @@ ul.social-in li i.rs {
       border: none;
       font-size: 16.5px;
       color: #432918;
-      padding: 14px 10px; }
+      padding: 14px 10px;
+      font-weight: bold; }
     .nav-flex li a:hover {
       font-weight: bold;
       color: #fff; }
@@ -367,7 +369,7 @@ ul.social-in li i.rs {
 
 .footer-in p {
   color: #ffffff;
-  font-size: 20px; }
+  font-size: 18px; }
 
 .icon_direccion {
   background: url(../images/icon_direccion.png) no-repeat;
@@ -391,7 +393,7 @@ ul.social-in li i.rs {
   margin-right: 10px; }
 
 .footer-in .fono {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold; }
 
 .gracias-a {
@@ -720,6 +722,25 @@ ul.social-in li i.rs {
   text-decoration: none;
   background: #432918; }
 
+/*ii*/
+.pl_xs_left {
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative; }
+
+.articulos article figure {
+  float: left;
+  overflow: hidden;
+  width: 100%; }
+
+.articulos article figure img,
+.articulos article figure .lupa,
+.articulos article figure .lupa:before,
+.articulos article figure .lupa .icon {
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
+
 /*ejecutoras*/
 /*ejecutores carrousel*/
 .ejecutoras {
@@ -982,7 +1003,7 @@ ul.social-in li i.rs {
   border: none; }
 
 .btn_suscribirse {
-  background: #ec8b00;
+  background: #432918;
   border: none;
   border-radius: 5px;
   height: 55px;
@@ -991,7 +1012,7 @@ ul.social-in li i.rs {
   padding: 0 30px; }
 
 .btn_suscribirse:hover {
-  background: #e8cd1d;
+  background: #ec8b00;
   border: none;
   border-radius: 5px;
   height: 55px;
@@ -1027,17 +1048,33 @@ form input.form-control[type=email], form input.form-control[type=text] {
   color: #e9ce0c;
   background-color: #6f9e28; }
 
-form::-webkit-input-placeholder {
-  color: #fff; }
+input[type="email"]::-webkit-input-placeholder {
+  color: #E8CD1D !important; }
 
-form:-moz-placeholder {
-  color: #fff; }
+input[type="email"]:-moz-placeholder {
+  /* Firefox 18- */
+  color: #E8CD1D !important; }
 
-form::-moz-placeholder {
-  color: #fff; }
+input[type="email"]::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #E8CD1D !important; }
 
-form:-ms-input-placeholder {
-  color: #fff; }
+input[type="email"]:-ms-input-placeholder {
+  color: #E8CD1D !important; }
+
+input[type="text"]::-webkit-input-placeholder {
+  color: #E8CD1D !important; }
+
+input[type="text"]:-moz-placeholder {
+  /* Firefox 18- */
+  color: #E8CD1D !important; }
+
+input[type="text"]::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #E8CD1D !important; }
+
+input[type="text"]:-ms-input-placeholder {
+  color: #E8CD1D !important; }
 
 @media (max-width: 880px) {
   .suscribirse {

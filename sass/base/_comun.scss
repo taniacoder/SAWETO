@@ -32,6 +32,7 @@ a.link-hover:before{
     opacity: 0.75;
     height: 100%;
     display: none;
+    -webkit-transition: 0.3s all;
 }
 a.link-hover:after{
     font-family: 'Glyphicons Halflings';
@@ -51,7 +52,9 @@ a.link-hover:after{
     font-size: 40px;
     color: #fff;
     display: none;
+    -webkit-transition: 0.3s all;
 }
 a.link-hover:hover:before, a.link-hover:hover:after{
 display: block;
+-webkit-transition: 0.3s all;
 }

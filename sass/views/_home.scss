@@ -210,6 +210,26 @@ opacity: 0.5;
  text-decoration:none;
  background: #432918;
 }
+/*ii*/
+.pl_xs_left {
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.articulos article figure {
+    float: left;
+    overflow: hidden;
+    width: 100%;
+}
+.articulos article figure img, 
+.articulos article figure .lupa, 
+.articulos article figure .lupa:before, 
+.articulos article figure .lupa .icon {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
 /*ejecutoras*/
 /*ejecutores carrousel*/
 
@@ -488,7 +508,7 @@ opacity: 0.5;
     border: none;
 }
 .btn_suscribirse{
-    background: #ec8b00;
+    background: #432918;
     border: none;
     border-radius: 5px;
     height:55px;
@@ -497,7 +517,7 @@ opacity: 0.5;
     padding: 0 30px;
 }
 .btn_suscribirse:hover{
-    background: #e8cd1d;
+    background: #ec8b00;
     border: none;
     border-radius: 5px;
     height:55px;
@@ -537,17 +557,41 @@ form {
         color: #e9ce0c;
         background-color: #6f9e28;
       }
-    }
-      &:placeholder {
-
-      }  
-      $placeholder-color: #fff;
-      &::-webkit-input-placeholder {color: $placeholder-color;}
-      &:-moz-placeholder {color: $placeholder-color;}
-      &::-moz-placeholder {color: $placeholder-color;}
-      &:-ms-input-placeholder {color: $placeholder-color;}      
+    }    
 }
 
+
+input[type="email"]::-webkit-input-placeholder {
+color: #E8CD1D !important;
+}
+ 
+input[type="email"]:-moz-placeholder { /* Firefox 18- */
+color: #E8CD1D !important;  
+}
+ 
+input[type="email"]::-moz-placeholder {  /* Firefox 19+ */
+color: #E8CD1D !important;  
+}
+ 
+input[type="email"]:-ms-input-placeholder {  
+color: #E8CD1D !important;  
+}
+
+input[type="text"]::-webkit-input-placeholder {
+color: #E8CD1D !important;
+}
+ 
+input[type="text"]:-moz-placeholder { /* Firefox 18- */
+color: #E8CD1D !important;  
+}
+ 
+input[type="text"]::-moz-placeholder {  /* Firefox 19+ */
+color: #E8CD1D !important;  
+}
+ 
+input[type="text"]:-ms-input-placeholder {  
+color: #E8CD1D !important;  
+}
 @media (max-width:880px){
 	.suscribirse{
 		background-position: 73% 100%;}

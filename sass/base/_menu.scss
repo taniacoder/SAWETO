@@ -26,10 +26,10 @@ ul {
     }
 }
 .icon_peru {
-    background: url(../images/peru-gris.svg) no-repeat;
+    background: url(../images/peru.svg) no-repeat;
     padding-left: 30px;
 }
-.icon_peru {
+.icon_peru,{
 	&:hover, 
 	&:active,
 	&:focus {
@@ -84,8 +84,6 @@ ul {
 				text-align: center;
 				line-height: 40px;
 
-				-webkit-box-shadow: 1px 0 1px rgba(0,0,0,0.5);
-				box-shadow: 1px 0 1px rgba(0,0,0,0.5);
 			}
 		}
 	}
@@ -104,8 +102,6 @@ ul {
 		text-align: center;
 		line-height: 40px;
 
-		-webkit-box-shadow: 1px 0 1px rgba(0,0,0,0.5);
-		box-shadow: 1px 0 1px rgba(0,0,0,0.5);
 }
 .redes-seeker .social-in li i {
     display: inline-block;
@@ -177,6 +173,7 @@ ul.social-in li i.rs {
 	    font-size: 16.5px;
 	    color: #432918;
 	    padding: 14px 10px;
+	    font-weight: bold;
 		}
 		a:hover {
 	    	font-weight: bold;

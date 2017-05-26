@@ -14,9 +14,10 @@ html
 		link(href='css/main.css', rel='stylesheet', type='text/css', media='all')
 		// fonts
 		link(href='css/fonts.css', rel='stylesheet', type='text/css')
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
 		//favicon
 		link(rel="shortcut icon",href="img/favicon.ico")
-		script(src='js/jquery.min.js')
+		//script(src='js/jquery.min.js')
 		// olw-carousel
 		//link( rel="stylesheet" href="assets/owl.carousel.min.css")
 		//link(rel="stylesheet" href="assets/owl.theme.default.min.css")
@@ -28,6 +29,9 @@ html
 		script(src="js/wow.min.js")
 		script.
 			new WOW().init();
+		script(src='js/bootstrap.min.js')
+		script(src='//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js')
+		script(type="text/javascript" src="https://taniacoder.github.io/SAWETO/js/jquery.flexisel.js")
 
 	body 
 		section.header
@@ -48,18 +52,18 @@ html
 									img(src="images/logo-banco-mundial.png" style="    width: 76px;" alt=" ")
 								ul.social-in
 									li
-										a(href='#')
-											i.facebook  
+										a.icono-primary(href='#')
+											i.fa.fa-facebook
 									li
-										a(href='#')
-											i.twitter  
+										a.icono-primary(href='#')
+											i.fa.fa-twitter
 									li
-										a(href='#')
-											i.youtube  
+										a.icono-primary(href='#')
+											i.fa.fa-youtube
 									li
-										a(href='#')
+										a.icono-primary(href='#')
 											i.rs  
-								.search(style='margin-top: 10px;')
+								.search
 									form
 										input(type='text', value='Buscador', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = '';}")
 										input(type='submit', value='')
@@ -111,7 +115,7 @@ html
 
 		section.slide
 			#carousel
-				i.fa.fa-quote-left.fa-4x
+				//i.fa.fa-quote-left.fa-4x
 				#banner-carousel.carousel.slide(data-ride='carousel', data-interval='3000')
 					// Carousel indicators
 					ol.carousel-indicators
@@ -215,7 +219,6 @@ html
 								| Las EPs son las 18 federaciones y organizaciones regionales indígenas y sus comunidades miembros de AIDESEP y CONAP, quienes recibirán recursos para la implementación de subproyectos en sus respectivos ámbitos de intervención.
 
 					.row
-						i.fa.fa-quote-left.fa-4x
 						#fade-quote-carousel.carousel.slide(data-ride='carousel', data-interval='100')
 							// Carousel indicators
 							ol.carousel-indicators
@@ -226,7 +229,7 @@ html
 								.active.item
 									.row 
 										.col-md-6
-											div.wow.fadeInLeft(data-wow-offset="20" data-wow-delay="0s")
+											div.wow.fadeInLeft(data-wow-offset="0" data-wow-delay="0s")
 												a( href ="#")
 													.box-item
 														h3 AIDESEP
@@ -252,7 +255,7 @@ html
 														h3 AIDESEP
 														p Asociación Interétnica de Desarrollo de la Selva Peruana													
 										.col-md-6
-											div.wow.fadeInRight(data-wow-offset="20" data-wow-delay="0s")
+											div.wow.fadeInRight(data-wow-offset="0" data-wow-delay="0s")
 												a( href ="#")
 													.box-item
 														h3 AIDESEP
@@ -419,7 +422,7 @@ html
 									}
 								});
 							});
-						script(type="text/javascript" src="js/jquery.flexisel.js")
+						
 
 				// 
 
@@ -445,12 +448,12 @@ html
 								.interesado-box
 									form.newsletter(action='#')
 										.form-group.margin_cero
-											input.form-control(type='email', placeholder='Escribe aquí tu correo electrónico...')
+											input.form-control(type='text', placeholder='Escribe aquí tu nombre...')
 							.col-md-6
 								.interesado-box
 									form.newsletter(action='#')
 											.form-group.margin_cero
-												input.form-control(type="text", placeholder='Escribe aquí tu Nº Celular...')
+												input.form-control(type="email", placeholder='Escribe aquí tu correo electrónico...')
 					// Doctor Bio #2 Ends
 					// Doctor Bio #3 Starts
 					.col-md-1.col-sm-1.col-xs-12
@@ -484,7 +487,7 @@ html
 						p.footer-class-2 Diseño y desarrollo: Raul Chavez Inche, Lima - Perú
 				.clearfix
 
-		script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+		
 
 
-		script(src='js/bootstrap.min.js')
+		

@@ -14,9 +14,10 @@
     <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
     <!-- fonts-->
     <link href="css/fonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--favicon-->
     <link rel="shortcut icon" href="img/favicon.ico">
-    <script src="js/jquery.min.js"></script>
+    <!--script(src='js/jquery.min.js')-->
     <!-- olw-carousel-->
     <!--link( rel="stylesheet" href="assets/owl.carousel.min.css")-->
     <!--link(rel="stylesheet" href="assets/owl.theme.default.min.css")-->
@@ -26,10 +27,10 @@
     <!--link de wow animate especifico -->
     <script src="js/min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-      
-    </script>
+    <script>new WOW().init();</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://taniacoder.github.io/SAWETO/js/jquery.flexisel.js"></script>
   </head>
   <body> 
     <section class="header">
@@ -47,12 +48,12 @@
               <div class="redes-seeker">
                 <div class="logo-mundial"><img src="images/logo-banco-mundial.png" style="    width: 76px" alt=" "></div>
                 <ul class="social-in">
-                  <li><a href="#"><i class="facebook"> </i></a></li>
-                  <li><a href="#"><i class="twitter"> </i></a></li>
-                  <li><a href="#"><i class="youtube"> </i></a></li>
-                  <li><a href="#"><i class="rs"> </i></a></li>
+                  <li><a class="icono-primary" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="icono-primary" href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="icono-primary" href="#"><i class="fa fa-youtube"></i></a></li>
+                  <li><a class="icono-primary" href="#"><i class="rs"> </i></a></li>
                 </ul>
-                <div class="search" style="margin-top: 10px">
+                <div class="search">
                   <form>
                     <input type="text" value="Buscador" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
                     <input type="submit" value="">
@@ -97,7 +98,8 @@
       </nav>
     </section>
     <section class="slide">
-      <div id="carousel"><i class="fa fa-quote-left fa-4x"></i>
+      <div id="carousel">
+        <!--i.fa.fa-quote-left.fa-4x-->
         <div class="carousel slide" id="banner-carousel" data-ride="carousel" data-interval="3000">
           <!-- Carousel indicators-->
           <ol class="carousel-indicators">
@@ -214,7 +216,7 @@
               <p style="margin-bottom: 60px">Las EPs son las 18 federaciones y organizaciones regionales indígenas y sus comunidades miembros de AIDESEP y CONAP, quienes recibirán recursos para la implementación de subproyectos en sus respectivos ámbitos de intervención.</p>
             </div>
           </div>
-          <div class="row"><i class="fa fa-quote-left fa-4x"></i>
+          <div class="row">
             <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="100">
               <!-- Carousel indicators-->
               <ol class="carousel-indicators">
@@ -226,7 +228,7 @@
                 <div class="active item">
                   <div class="row"> 
                     <div class="col-md-6">
-                      <div class="wow fadeInLeft" data-wow-offset="20" data-wow-delay="0s"><a href="#">
+                      <div class="wow fadeInLeft" data-wow-offset="0" data-wow-delay="0s"><a href="#">
                           <div class="box-item">
                             <h3>AIDESEP</h3>
                             <p>Asociación Interétnica de Desarrollo de la Selva Peruana</p>
@@ -253,7 +255,7 @@
                           </div></a></div>
                     </div>
                     <div class="col-md-6">
-                      <div class="wow fadeInRight" data-wow-offset="20" data-wow-delay="0s"><a href="#">
+                      <div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="0s"><a href="#">
                           <div class="box-item">
                             <h3>AIDESEP</h3>
                             <p>Asociación Interétnica de Desarrollo de la Selva Peruana</p>
@@ -432,8 +434,9 @@
               		}
               	});
               });
+              
+              
             </script>
-            <script type="text/javascript" src="js/jquery.flexisel.js"></script>
           </div>
         </div>
         <!-- -->
@@ -467,7 +470,7 @@
                 <div class="interesado-box">
                   <form class="newsletter" action="#">
                     <div class="form-group margin_cero">
-                      <input class="form-control" type="email" placeholder="Escribe aquí tu correo electrónico...">
+                      <input class="form-control" type="text" placeholder="Escribe aquí tu nombre...">
                     </div>
                   </form>
                 </div>
@@ -476,7 +479,7 @@
                 <div class="interesado-box">
                   <form class="newsletter" action="#">
                     <div class="form-group margin_cero">
-                      <input class="form-control" type="text" placeholder="Escribe aquí tu Nº Celular...">
+                      <input class="form-control" type="email" placeholder="Escribe aquí tu correo electrónico...">
                     </div>
                   </form>
                 </div>
@@ -532,7 +535,5 @@
         <div class="clearfix"></div>
       </div>
     </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

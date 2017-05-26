@@ -10,7 +10,7 @@ body {
   background: #fff;
   font-family: 'Century Gothic', sans-serif; }
   body a {
-    -webkit-transition: 0.5s all; }
+    -webkit-transition: 0.3s all; }
 
 @media (min-width: 1200px) {
   /*.container {
@@ -100,7 +100,7 @@ ul {
 
 /*redes*/
 .redes-seeker {
-  padding: 0px 0 15px;
+  padding: 10px 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,6 +110,8 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .redes-seeker .logo-mundial {
+    padding-right: 10px; }
   .redes-seeker ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -118,37 +120,46 @@ ul {
         -ms-flex-pack: end;
             justify-content: flex-end;
     list-style-type: none; }
+    .redes-seeker ul li {
+      padding: 0 5px; }
+      .redes-seeker ul li .icono-primary {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        background: #579E32;
+        border-radius: 50%;
+        position: relative;
+        z-index: 1;
+        height: 35px;
+        width: 35px;
+        text-align: center;
+        line-height: 40px;
+        box-shadow: 1px 0 1px rgba(0, 0, 0, 0.5); }
 
-ul.social-in li i {
-  width: 40px;
-  height: 40px;
+.redes-seeker .social-in .icono-primary:hover {
   display: inline-block;
-  margin: 0 3px; }
+  text-decoration: none;
+  color: #fff;
+  background: #EC8B00;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 40px;
+  box-shadow: 1px 0 1px rgba(0, 0, 0, 0.5); }
 
-ul.social-in li i.facebook {
-  background: url(../images/social_facebook.png) no-repeat; }
-
-ul.social-in li i.facebook:hover {
-  background: url(../images/facebook-hover.svg) no-repeat; }
-
-ul.social-in li i.twitter {
-  background: url(../images/social_twitter.png) no-repeat; }
-
-ul.social-in li i.twitter:hover {
-  background: url(../images/twiters-hover.svg) no-repeat; }
-
-ul.social-in li i.youtube {
-  background: url(../images/social_youtube.png) no-repeat; }
-
-ul.social-in li i.youtube:hover {
-  background: url(../images/youtube-hover.svg) no-repeat; }
+.redes-seeker .social-in li i {
+  display: inline-block;
+  font-size: 20px; }
 
 ul.social-in li i.rs {
-  background: url(../images/social_rs.png) no-repeat; }
+  background: url(../images/flickr.svg) no-repeat;
+  width: 40px;
+  height: 24px; }
 
-ul.social-in li i.rs:hover {
-  background: url(../images/flickr-hover.svg) no-repeat; }
-
+/*//*/
 .search {
   float: right;
   position: relative;
@@ -205,12 +216,12 @@ ul.social-in li i.rs:hover {
     .nav-flex li a {
       text-decoration: none;
       border: none;
-      font-size: 17px;
+      font-size: 16.5px;
       color: #432918;
       padding: 14px 10px; }
     .nav-flex li a:hover {
       font-weight: bold;
-      /*color: #fde3bf;*/ }
+      color: #fff; }
 
 /*-hover-on-*/
 .nav-flex li {
@@ -221,17 +232,17 @@ ul.social-in li i.rs:hover {
     position: absolute;
     bottom: 0px;
     left: 0;
-    height: 5px;
+    height: 3px;
     width: 100%;
     background-color: #ec8b00;
     -webkit-transform-origin: left top;
             transform-origin: left top;
     -webkit-transform: scale(0, 1);
             transform: scale(0, 1);
-    -webkit-transition: color 0.1s,-webkit-transform 1s ease-out;
-    transition: color 0.1s,-webkit-transform 1s ease-out;
-    transition: color 0.1s,transform 1s ease-out;
-    transition: color 0.1s,transform 1s ease-out,-webkit-transform 1s ease-out; }
+    -webkit-transition: color 0.3s,-webkit-transform 1s ease-out;
+    transition: color 0.3s,-webkit-transform 1s ease-out;
+    transition: color 0.3s,transform 1s ease-out;
+    transition: color 0.3s,transform 1s ease-out,-webkit-transform 1s ease-out; }
   .nav-flex li a:active::before {
     background-color: #ec8b00; }
   .nav-flex li a:hover::before, .nav-flex li a:focus::before {
@@ -254,8 +265,8 @@ ul.social-in li i.rs:hover {
   background: #579e32;
   color: #fff;
   font-weight: 900;
-  -webkit-transition: all 1.0s ease-in;
-  transition: all 1.0s ease-in; }
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in; }
 
 /*-hover-end--*/
 .navbar-header .redes-seeker {
@@ -583,7 +594,7 @@ ul.social-in li i.rs:hover {
   padding: 10px; }
   .box-trans h2 {
     font-weight: bold;
-    font-size: 29px; }
+    font-size: 35px; }
   .box-trans h3 {
     font-size: 20px; }
 

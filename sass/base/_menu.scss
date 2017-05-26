@@ -57,49 +57,71 @@ ul {
 
 
 /*redes*/
-.redes-seeker {
-	padding: 0px 0 15px;
+.redes-seeker{
+	padding: 10px 0 15px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	.logo-mundial {
+		padding-right: 10px;
+	}
 	ul {
 		display: flex;
 		justify-content: flex-end;
 		list-style-type: none;
+		li {
+			padding: 0 5px;
+				.icono-primary {
+				display: inline-block;
+				text-decoration: none;
+				color: #fff;
+				background: #579E32;
+				border-radius: 50%;
+				position: relative;
+				z-index: 1;
+				height: 35px;
+				width: 35px;
+				text-align: center;
+				line-height: 40px;
+
+				-webkit-box-shadow: 1px 0 1px rgba(0,0,0,0.5);
+				box-shadow: 1px 0 1px rgba(0,0,0,0.5);
+			}
+		}
 	}
-
 }
-ul.social-in li i {
-    width: 40px;
-    height: 40px;
+
+.redes-seeker .social-in .icono-primary:hover {
+		display: inline-block;
+		text-decoration: none;
+		color: #fff;
+		background: #EC8B00;
+		border-radius: 50%;
+		position: relative;
+		z-index: 1;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		line-height: 40px;
+
+		-webkit-box-shadow: 1px 0 1px rgba(0,0,0,0.5);
+		box-shadow: 1px 0 1px rgba(0,0,0,0.5);
+}
+.redes-seeker .social-in li i {
     display: inline-block;
-    margin: 0 3px;
+    font-size: 20px;
 }
 
-ul.social-in li i.facebook {
-    background: url(../images/social_facebook.png)no-repeat;
-}
-ul.social-in li i.facebook:hover {
-    background: url(../images/facebook-hover.svg)no-repeat;
-}
-ul.social-in li i.twitter {
-    background: url(../images/social_twitter.png)no-repeat;
-}
-ul.social-in li i.twitter:hover {
-    background: url(../images/twiters-hover.svg)no-repeat;
-}
-ul.social-in li i.youtube {
-    background: url(../images/social_youtube.png)no-repeat;
-}
-ul.social-in li i.youtube:hover {
-    background: url(../images/youtube-hover.svg)no-repeat;
-}
 ul.social-in li i.rs {
-    background: url(../images/social_rs.png)no-repeat;
+    background: url(../images/flickr.svg)no-repeat;
+    width: 40px;
+    height: 24px;
 }
-ul.social-in li i.rs:hover {
-    background: url(../images/flickr-hover.svg)no-repeat;
-}
+
+
+
+
+/*//*/
 .search {
     float: right;
     position: relative;
@@ -152,13 +174,13 @@ ul.social-in li i.rs:hover {
 		a {
 		text-decoration: none;
 	    border: none;
-	    font-size: 17px;
+	    font-size: 16.5px;
 	    color: #432918;
 	    padding: 14px 10px;
 		}
 		a:hover {
 	    	font-weight: bold;
-	    	/*color: #fde3bf;*/
+	    	color: #fff;
 	    }
 	}
 }
@@ -171,12 +193,12 @@ ul.social-in li i.rs:hover {
         position: absolute;
         bottom: 0px;
         left: 0;
-        height: 5px;
+        height: 3px;
         width: 100%;
         background-color: #ec8b00;
         transform-origin: left top;
         transform: scale(0, 1);
-        transition: color 0.1s,transform 1s ease-out;
+        transition: color 0.3s,transform 1s ease-out;
     }
      a:active::before {
         background-color: #ec8b00;
@@ -202,7 +224,7 @@ ul.social-in li i.rs:hover {
 	background:#579e32;
     color: #fff;
     font-weight: 900;
-    transition: all 1.0s ease-in;
+    transition: all 0.3s ease-in;
 }
 /*-hover-end--*/
 .navbar-header .redes-seeker {

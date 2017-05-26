@@ -25,25 +25,36 @@ ul {
 		}
     }
 }
-
-.icon_euu {
-    background: url(../images/ingles.svg) no-repeat;
+.icon_peru {
+    background: url(../images/peru-gris.svg) no-repeat;
     padding-left: 30px;
-    margin-left: 20px;
-}
-.icon_euu:hover {
-    background: url(../images/ingles.svg) no-repeat;
-    padding-left: 30px;
-    margin-left: 20px;
 }
 .icon_peru {
+	&:hover, 
+	&:active,
+	&:focus {
     background: url(../images/peru.svg) no-repeat;
     padding-left: 30px;
+    margin-left: 20px;
+	}
 }
-.icon_peru:hover {
-    background: url(../images/peru.svg) no-repeat;
+
+.icon_euu {
+    background: url(../images/ingles-gris.svg) no-repeat;
     padding-left: 30px;
+    margin-left: 20px;
 }
+.icon_euu {
+    &:hover, 
+    &:active {
+		background: url(../images/ingles.svg) no-repeat;
+    padding-left: 30px;
+    margin-left: 20px;
+    }
+}
+
+
+
 
 /*redes*/
 .redes-seeker {

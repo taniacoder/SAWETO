@@ -52,7 +52,8 @@
     font-weight: bold;
 }
 .gracias-a{
-    text-align: center;
+        display: flex;
+    justify-content: flex-end;
     img {
         width: auto;
         height: 46px;

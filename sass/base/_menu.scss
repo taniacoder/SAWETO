@@ -54,17 +54,20 @@ ul {
 }
 
 
-
+.logo-m-seeker {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 10px;
+	align-items: center;
+}
 
 /*redes*/
 .redes-seeker{
 	padding: 10px 0 15px;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	align-items: center;
-	.logo-mundial {
-		padding-right: 10px;
-	}
+
 	ul {
 		display: flex;
 		justify-content: flex-end;
@@ -75,7 +78,7 @@ ul {
 				display: inline-block;
 				text-decoration: none;
 				color: #fff;
-				background: #579E32;
+				background: #387014;
 				border-radius: 50%;
 				position: relative;
 				z-index: 1;

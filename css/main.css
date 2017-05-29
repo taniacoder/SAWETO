@@ -101,20 +101,30 @@ ul {
   padding-left: 30px;
   margin-left: 20px; }
 
-/*redes*/
-.redes-seeker {
-  padding: 10px 0 15px;
+.logo-m-seeker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-right: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .redes-seeker .logo-mundial {
-    padding-right: 10px; }
+
+/*redes*/
+.redes-seeker {
+  padding: 10px 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .redes-seeker ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -129,7 +139,7 @@ ul {
         display: inline-block;
         text-decoration: none;
         color: #fff;
-        background: #579E32;
+        background: #387014;
         border-radius: 50%;
         position: relative;
         z-index: 1;
@@ -397,7 +407,12 @@ ul.social-in li i.rs {
   font-weight: bold; }
 
 .gracias-a {
-  text-align: center; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
   .gracias-a img {
     width: auto;
     height: 46px; }
@@ -687,6 +702,7 @@ ul.social-in li i.rs {
     width: 100%; }
 
 .top-content h5 a {
+  font-weight: bold;
   color: #494949;
   text-decoration: none;
   font-size: 18px; }
@@ -699,7 +715,8 @@ ul.social-in li i.rs {
 
 .fecha-index-noticia {
   color: #579e32;
-  font-size: 14px; }
+  font-size: 14px;
+  font-weight: bold; }
 
 .text-fecha-index-noticia {
   margin-bottom: 20px;
@@ -756,11 +773,12 @@ ul.social-in li i.rs {
 
 .ejecutoras a .box-item:hover {
   color: #fff;
-  background: #548335;
+  background: #C77605;
   display: block;
   overflow: hidden;
   text-decoration: none;
-  -webkit-transition: 0.5s all; }
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all; }
 
 .ejecutoras .content h3 {
   text-align: center;
@@ -774,11 +792,15 @@ ul.social-in li i.rs {
   padding-bottom: 30px; }
 
 .box-item {
+  background: #548335;
+  color: #fff;
+  overflow: hidden;
   border-bottom: 1px #dfdfdf solid;
-  padding: 0 20px;
-  color: #000; }
+  padding: 0 20px; }
   .box-item h3 {
     font-weight: bold; }
+  .box-item p {
+    font-size: 13px; }
 
 @media (max-width: 992px) {
   .ejecutoras .item .col-md-6 {

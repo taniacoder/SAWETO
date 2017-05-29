@@ -14,7 +14,7 @@ html
 		link(href='css/main.css', rel='stylesheet', type='text/css', media='all')
 		// fonts
 		link(href='css/fonts.css', rel='stylesheet', type='text/css')
-		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+		link(rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
 		//favicon
 		link(rel="shortcut icon",href="images/favicon.ico")
 		// jQuery (necessary for Bootstrap's JavaScript plugins)
@@ -48,22 +48,9 @@ html
 										a.icon_peru(href='#') Español
 									li
 										a.icon_euu(href='') Ingles
-							.redes-seeker
+							.logo-m-seeker
 								.logo-mundial
-									img(src="images/logo-banco-mundial.png" style="    width: 76px;" alt=" ")
-								ul.social-in
-									li
-										a.icono-primary(href='#')
-											i.fa.fa-facebook
-									li
-										a.icono-primary(href='#')
-											i.fa.fa-twitter
-									li
-										a.icono-primary(href='#')
-											i.fa.fa-youtube
-									li
-										a.icono-primary(href='#')
-											i.rs  
+										img(src="images/logo-banco-mundial.png" style="    height: 70px;" alt=" ")
 								.search
 									form
 										input(type='text', value='Buscador', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = '';}")
@@ -106,11 +93,11 @@ html
 								li
 									a(href='#') GOBERNANZA
 								li
-									a(href='#') COMUNICACIONES 
+									a(href='#') ALIANZAS
 								li
-									a(href='#') TRANSAPAREMCIA
+									a(href='#') COMUNICACIONES
 								li
-									a(href='#') GOBERNANZA
+									a(href='#') TRANSPARENCIA
 						// /.navbar-collapse
 					// /.container-fluid
 
@@ -159,12 +146,14 @@ html
 			.container
 				.row
 					.col-md-2.wow.fadeInLeft(data-wow-offset="200" data-wow-delay="0.1s")
-						div.icons-aidesep
+						a(href="aidesep.org.pe")
+							div.icons-aidesep
 					.col-md-8.anim.serie.activa.wow.fadeInUp(data-wow-offset="200" data-wow-delay="0.2s")
 						h3 MDE SAWETO
 						p El MDE Saweto Perú, es una iniciativa diseñada por las organizaciones indígenas amazónicas nacionales: La Asociación Interétnica de Desarrollo de la Selva Peruana (AIDESEP) y la Confederación de Nacionalidades Amazónicas del Perú (CONAP).
 					.col-md-2.wow.fadeInRight(data-wow-offset="200" data-wow-delay="0.1s")
-						div.icons-conap
+						a(href="conap.org.pe")
+							div.icons-conap
 
 		//noticias
 		section.noticias
@@ -182,9 +171,7 @@ html
 								p.fecha-index-noticia 25 de Abril del 2017
 								p.text-fecha-index-noticia
 									| Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sed do eiusmod tem por inci didunt ut labore et dolore...
-								.white
-									a.btn-index-noticias(href='single.html') LEER MÁS
-									.clearfix
+
 
 					.col-md-4.wow.zoomIn(data-wow-offset="25" data-wow-delay="0.1s")
 						.col-md
@@ -196,9 +183,7 @@ html
 								p.fecha-index-noticia 25 de Abril del 2017
 								p.text-fecha-index-noticia
 									| Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sed do eiusmod tem por inci didunt ut labore et dolore...
-								.white
-									a.btn-index-noticias(href='single.html') LEER MÁS
-									.clearfix
+
 					.col-md-4.wow.zoomIn(data-wow-offset="25" data-wow-delay="0.2s")
 						.col-md
 							a.link-hover(href='single.html')
@@ -209,20 +194,19 @@ html
 								p.fecha-index-noticia 25 de Abril del 2017
 								p.text-fecha-index-noticia
 									| Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sed do eiusmod tem por inci didunt ut labore et dolore...
-								.white
-									a.btn-index-noticias(href='single.html') LEER MÁS
-									.clearfix
+
 		section.ejecutoras
-			section#carousel
+			section
 				.container
 					.content
 						.col-md-12.md-col
 							h3 EJECUTORAS DE SUBPROYECTOS (EPs)
 							p(style='margin-bottom: 60px')
 								| Las EPs son las 18 federaciones y organizaciones regionales indígenas y sus comunidades miembros de AIDESEP y CONAP, quienes recibirán recursos para la implementación de subproyectos en sus respectivos ámbitos de intervención.
-
+			#carousel
+				.container
 					.row
-						#fade-quote-carousel.carousel.slide(data-ride='carousel', data-interval='100')
+						#fade-quote-carousel.carousel.slide(data-ride='carousel', data-interval='50')
 							// Carousel indicators
 							ol.carousel-indicators
 								li.active(data-target='#fade-quote-carousel', data-slide-to='0')
@@ -232,7 +216,7 @@ html
 								.active.item
 									.row 
 										.col-md-6
-											div.wow.fadeInLeft(data-wow-offset="0" data-wow-delay="0s")
+											div.wow.fadeInLeft(data-wow-delay="0s") 
 												a( href ="#")
 													.box-item
 														h3 AIDESEP
@@ -258,7 +242,7 @@ html
 														h3 CORPI SL
 														p Coordinadora Regional de Pueblos Indígenas Región San Lorenzo												
 										.col-md-6
-											div.wow.fadeInRight(data-wow-offset="0" data-wow-delay="0s")
+											div.wow.fadeInRight(data-wow-delay="0s")
 												a( href ="#")
 													.box-item
 														h3 CORPIAA
@@ -286,7 +270,7 @@ html
 								.item
 									.row
 										.col-md-6
-											div.wow.fadeInLeft(data-wow-delay="0s")
+											div.wow.fadeInLeft(data-wow-delay="0s" style ="overflow: hidden;")
 												a( href ="#")
 													.box-item
 														h3 ACONAKKU
@@ -480,9 +464,24 @@ html
 		.footer-middle
 			.container
 				.row
-					.col-md-12
+					.col-md-7
 						.gracias-a
 							img(src="images/gracias-a.png")
+					.col-md-5
+						.redes-seeker
+							ul.social-in
+								li
+									a.icono-primary(href='#')
+										i.fa.fa-facebook
+								li
+									a.icono-primary(href='#')
+										i.fa.fa-twitter
+								li
+									a.icono-primary(href='#')
+										i.fa.fa-youtube
+								li
+									a.icono-primary(href='#')
+										i.rs  
 				.row.pt-20
 					.col-md-6.col-sm-6.col-xs-12
 						p.footer-class Copyright 2017 - Saweto

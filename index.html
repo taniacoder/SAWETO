@@ -14,7 +14,7 @@
     <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
     <!-- fonts-->
     <link href="css/fonts.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--favicon-->
     <link rel="shortcut icon" href="images/favicon.ico">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
@@ -46,14 +46,8 @@
                   <li><a class="icon_euu" href="">Ingles</a></li>
                 </ul>
               </div>
-              <div class="redes-seeker">
-                <div class="logo-mundial"><img src="images/logo-banco-mundial.png" style="    width: 76px" alt=" "></div>
-                <ul class="social-in">
-                  <li><a class="icono-primary" href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li><a class="icono-primary" href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li><a class="icono-primary" href="#"><i class="fa fa-youtube"></i></a></li>
-                  <li><a class="icono-primary" href="#"><i class="rs"> </i></a></li>
-                </ul>
+              <div class="logo-m-seeker">
+                <div class="logo-mundial"><img src="images/logo-banco-mundial.png" style="    height: 70px" alt=" "></div>
                 <div class="search">
                   <form>
                     <input type="text" value="Buscador" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
@@ -88,9 +82,9 @@
               <li><a href="#">TERRITORIALIDAD</a></li>
               <li><a href="#">MANEJO FORESTAL</a></li>
               <li><a href="#">GOBERNANZA</a></li>
-              <li><a href="#">COMUNICACIONES </a></li>
-              <li><a href="#">TRANSAPAREMCIA</a></li>
-              <li><a href="#">GOBERNANZA</a></li>
+              <li><a href="#">ALIANZAS</a></li>
+              <li><a href="#">COMUNICACIONES</a></li>
+              <li><a href="#">TRANSPARENCIA</a></li>
             </ul>
           </div>
           <!-- /.navbar-collapse-->
@@ -151,16 +145,14 @@
     <section class="mde">
       <div class="container">
         <div class="row">
-          <div class="col-md-2 wow fadeInLeft" data-wow-offset="200" data-wow-delay="0.1s">
-            <div class="icons-aidesep"></div>
-          </div>
+          <div class="col-md-2 wow fadeInLeft" data-wow-offset="200" data-wow-delay="0.1s"><a href="aidesep.org.pe">
+              <div class="icons-aidesep"></div></a></div>
           <div class="col-md-8 anim serie activa wow fadeInUp" data-wow-offset="200" data-wow-delay="0.2s">
             <h3>MDE SAWETO</h3>
             <p>El MDE Saweto Perú, es una iniciativa diseñada por las organizaciones indígenas amazónicas nacionales: La Asociación Interétnica de Desarrollo de la Selva Peruana (AIDESEP) y la Confederación de Nacionalidades Amazónicas del Perú (CONAP).</p>
           </div>
-          <div class="col-md-2 wow fadeInRight" data-wow-offset="200" data-wow-delay="0.1s">
-            <div class="icons-conap"></div>
-          </div>
+          <div class="col-md-2 wow fadeInRight" data-wow-offset="200" data-wow-delay="0.1s"><a href="conap.org.pe">
+              <div class="icons-conap"></div></a></div>
         </div>
       </div>
     </section>
@@ -175,9 +167,6 @@
                 <h5><a href="single.html">LOREM IPSUN DOLOR MEIN AT</a></h5>
                 <p class="fecha-index-noticia">25 de Abril del 2017</p>
                 <p class="text-fecha-index-noticia">Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sed do eiusmod tem por inci didunt ut labore et dolore...</p>
-                <div class="white"><a class="btn-index-noticias" href="single.html">LEER MÁS</a>
-                  <div class="clearfix"></div>
-                </div>
               </div>
             </div>
           </div>
@@ -187,9 +176,6 @@
                 <h5><a href="single.html">LOREM IPSUN DOLOR MEIN AT</a></h5>
                 <p class="fecha-index-noticia">25 de Abril del 2017</p>
                 <p class="text-fecha-index-noticia">Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sed do eiusmod tem por inci didunt ut labore et dolore...</p>
-                <div class="white"><a class="btn-index-noticias" href="single.html">LEER MÁS</a>
-                  <div class="clearfix"></div>
-                </div>
               </div>
             </div>
           </div>
@@ -199,9 +185,6 @@
                 <h5><a href="single.html">LOREM IPSUN DOLOR MEIN AT</a></h5>
                 <p class="fecha-index-noticia">25 de Abril del 2017</p>
                 <p class="text-fecha-index-noticia">Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sed do eiusmod tem por inci didunt ut labore et dolore...</p>
-                <div class="white"><a class="btn-index-noticias" href="single.html">LEER MÁS</a>
-                  <div class="clearfix"></div>
-                </div>
               </div>
             </div>
           </div>
@@ -209,7 +192,7 @@
       </div>
     </section>
     <section class="ejecutoras">
-      <section id="carousel">
+      <section>
         <div class="container">
           <div class="content">
             <div class="col-md-12 md-col">
@@ -217,8 +200,12 @@
               <p style="margin-bottom: 60px">Las EPs son las 18 federaciones y organizaciones regionales indígenas y sus comunidades miembros de AIDESEP y CONAP, quienes recibirán recursos para la implementación de subproyectos en sus respectivos ámbitos de intervención.</p>
             </div>
           </div>
+        </div>
+      </section>
+      <div id="carousel">
+        <div class="container">
           <div class="row">
-            <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="100">
+            <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="50">
               <!-- Carousel indicators-->
               <ol class="carousel-indicators">
                 <li class="active" data-target="#fade-quote-carousel" data-slide-to="0"></li>
@@ -229,7 +216,7 @@
                 <div class="active item">
                   <div class="row"> 
                     <div class="col-md-6">
-                      <div class="wow fadeInLeft" data-wow-offset="0" data-wow-delay="0s"><a href="#">
+                      <div class="wow fadeInLeft" data-wow-delay="0s"> <a href="#">
                           <div class="box-item">
                             <h3>AIDESEP</h3>
                             <p>Asociación Interétnica de Desarrollo de la Selva Peruana</p>
@@ -256,7 +243,7 @@
                           </div></a></div>
                     </div>
                     <div class="col-md-6">
-                      <div class="wow fadeInRight" data-wow-offset="0" data-wow-delay="0s"><a href="#">
+                      <div class="wow fadeInRight" data-wow-delay="0s"><a href="#">
                           <div class="box-item">
                             <h3>CORPIAA</h3>
                             <p>Coordinadora Regional de los Pueblos Indígenas de AIDESEP Atalaya</p>
@@ -287,7 +274,7 @@
                 <div class="item">
                   <div class="row">
                     <div class="col-md-6">
-                      <div class="wow fadeInLeft" data-wow-delay="0s"><a href="#">
+                      <div class="wow fadeInLeft" data-wow-delay="0s" style="overflow: hidden"><a href="#">
                           <div class="box-item">
                             <h3>ACONAKKU</h3>
                             <p>Asociación de comunidades nativas Kukama Kukamiria del distrito de Urarinas</p>
@@ -346,7 +333,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </section>
     <section class="boxstcm"></section>
     <section class="index-enlaces">
@@ -521,8 +508,18 @@
     <div class="footer-middle">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-7">
             <div class="gracias-a"><img src="images/gracias-a.png"></div>
+          </div>
+          <div class="col-md-5">
+            <div class="redes-seeker">
+              <ul class="social-in">
+                <li><a class="icono-primary" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="icono-primary" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="icono-primary" href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a class="icono-primary" href="#"><i class="rs"> </i></a></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="row pt-20">

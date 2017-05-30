@@ -115,23 +115,11 @@ ul {
 
 /*redes*/
 .redes-seeker {
-  padding: 10px 0 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  padding: 10px 0 15px; }
   .redes-seeker ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
     list-style-type: none; }
     .redes-seeker ul li {
       padding: 0 5px; }
@@ -407,12 +395,7 @@ ul.social-in li i.rs {
   font-weight: bold; }
 
 .gracias-a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+  padding-right: 20px; }
   .gracias-a img {
     width: auto;
     height: 46px; }
@@ -522,11 +505,7 @@ ul.social-in li i.rs {
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+      align-content: center; }
 
 .mt-81 {
   margin-top: 81px; }

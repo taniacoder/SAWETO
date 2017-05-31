@@ -213,6 +213,48 @@ opacity: 0.5;
  text-decoration:none;
  background: #432918;
 }
+
+/*--------------------------*/
+/*       hovers  box        */
+/*--------------------------*/
+a.link-hover{
+    position: relative;
+    display: block;
+}
+a.link-hover:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: #cd8318;
+    opacity: 0.75;
+    height: 100%;
+    display: none;
+    -webkit-transition: 0.3s all;
+}
+a.link-hover:after{
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e003";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 40px;
+    height: 100%;
+    top: 44%;
+    font-size: 40px;
+    color: #fff;
+    display: none;
+    -webkit-transition: 0.3s all;
+}
+a.link-hover:hover:before, a.link-hover:hover:after{
+display: block;
+-webkit-transition: 0.3s all;
+}
 /*ii*/
 .pl_xs_left {
     display: block;

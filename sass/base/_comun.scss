@@ -16,45 +16,93 @@ body {
 }*/
 }
 
+/*interna1 MDE SAWETO*/
+.banner-comun {
+    img {
+        width: 100%;
+    }
+}
 
-/*--------------------------*/
-/*       hovers  box        */
-/*--------------------------*/
-a.link-hover{
-    position: relative;
-    display: block;
+.body-internas {
+    padding: 40px 0 40px;
+    .section-principal {
+        text-align: center;
+        background: #387014;
+        color: #fff;
+        padding: 10px;
+        h1 {
+            font-size: 21px;
+            font-weight: bold;
+        }
+    }
+    .subsecciones {
+        background-color: #F2F2F2;
+        padding: 20px;
+        ul {
+            list-style: none;
+             a {
+                color: #000;
+                    &:hover, &:focus, {
+                        text-decoration: none;
+                        background-color: #ED9009;
+                    }
+                }
+            li {
+                padding: 10px 0px;
+                border-bottom: 1px solid #ccc;
+                font-weight: bold;
+                &:hover, &:focus, {
+                    text-decoration: none;
+                    background-color: #ED9009;
+                    color: #fff;
+                }
+            }
+        }
+    }
 }
-a.link-hover:before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    background-color: #cd8318;
-    opacity: 0.75;
-    height: 100%;
-    display: none;
-    -webkit-transition: 0.3s all;
-}
-a.link-hover:after{
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "\e003";
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 40px;
-    height: 100%;
-    top: 44%;
-    font-size: 40px;
-    color: #fff;
-    display: none;
-    -webkit-transition: 0.3s all;
-}
-a.link-hover:hover:before, a.link-hover:hover:after{
-display: block;
--webkit-transition: 0.3s all;
+
+.content-interna {
+    h2 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #ED9009;
+        padding-bottom: 15px
+    }
+    p {
+        line-height: 22px;
+    }
+    .lista {
+        ul {
+            list-style: none;
+        }
+    }
+    .box-circle {
+        padding: 10px;
+        display: flex;
+        .circle {
+            background-color: #579F33;
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .borde-line {
+                border: solid 1px #fff;
+                border-radius: 50%;
+                height: 135px;
+                width: 135px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p {
+                text-align: center;
+                line-height: 16px;
+                color: #fff;
+                  }
+            }
+
+        }
+    }
 }

@@ -17,89 +17,14 @@ body {
     width: 1300px;
 }*/ }
 
-/*interna1 MDE SAWETO*/
-.banner-comun img {
-  width: 100%; }
-
-.body-internas {
-  padding: 40px 0 40px; }
-  .body-internas .section-principal {
-    text-align: center;
-    background: #387014;
-    color: #fff;
-    padding: 10px; }
-    .body-internas .section-principal h1 {
-      font-size: 21px;
-      font-weight: bold; }
-  .body-internas .subsecciones {
-    background-color: #F2F2F2;
-    padding: 20px; }
-    .body-internas .subsecciones ul {
-      list-style: none; }
-      .body-internas .subsecciones ul a {
-        color: #000; }
-        .body-internas .subsecciones ul a:hover, .body-internas .subsecciones ul a:focus {
-          text-decoration: none;
-          background-color: #ED9009; }
-      .body-internas .subsecciones ul li {
-        padding: 10px 0px;
-        border-bottom: 1px solid #ccc;
-        font-weight: bold; }
-        .body-internas .subsecciones ul li:hover, .body-internas .subsecciones ul li:focus {
-          text-decoration: none;
-          background-color: #ED9009;
-          color: #fff; }
-
-.content-interna h2 {
-  font-size: 20px;
-  font-weight: bold;
-  color: #ED9009;
-  padding-bottom: 15px; }
-
-.content-interna p {
-  line-height: 22px; }
-
-.content-interna .lista ul {
-  list-style: none; }
-
-.content-interna .box-circle {
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .content-interna .box-circle .circle {
-    background-color: #579F33;
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    margin: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .content-interna .box-circle .circle .borde-line {
-      border: solid 1px #fff;
-      border-radius: 50%;
-      height: 135px;
-      width: 135px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      .content-interna .box-circle .circle .borde-line p {
-        text-align: center;
-        line-height: 16px;
-        color: #fff; }
+.circle-item {
+  border: 4px solid #579f33;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  margin: 16px 10px 15px 0px; }
+  .circle-item:hover, .circle-item:focus {
+    border: 4px solid #fff; }
 
 section.header {
   padding: 30px 0 10px; }
@@ -577,6 +502,9 @@ ul.social-in li i.rs {
 
 .f-s {
   font-size: 21px; }
+
+.width-100 {
+  width: 100%; }
 
 /*carousel-banner*/
 #banner-carousel.carousel .carousel-inner .item {
@@ -1656,3 +1584,113 @@ p.dollar span.in-dollar{
     color:#fff;
 }
 /*----*/
+/*interna1 MDE SAWETO*/
+.body-internas {
+  padding: 40px 0 40px; }
+  .body-internas .section-principal {
+    text-align: center;
+    background: #387014;
+    color: #fff;
+    padding: 10px; }
+    .body-internas .section-principal h1 {
+      font-size: 21px;
+      font-weight: bold; }
+  .body-internas .subsecciones {
+    background-color: #F2F2F2; }
+    .body-internas .subsecciones ul {
+      list-style: none; }
+      .body-internas .subsecciones ul a {
+        padding: 6px 0;
+        color: #000;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .body-internas .subsecciones ul a:hover, .body-internas .subsecciones ul a:focus {
+          text-decoration: none;
+          color: #fff; }
+      .body-internas .subsecciones ul li {
+        font-weight: bold;
+        padding: 0 15px; }
+        .body-internas .subsecciones ul li:hover, .body-internas .subsecciones ul li:focus {
+          text-decoration: none;
+          background-color: #ED9009;
+          color: #fff; }
+      .body-internas .subsecciones ul p {
+        padding: 10px 0;
+        margin: 0;
+        font-size: 13px; }
+        .body-internas .subsecciones ul p:hover, .body-internas .subsecciones ul p:focus {
+          color: #fff; }
+
+.item-sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #ccc; }
+  .item-sub:hover, .item-sub:focus {
+    color: #fff; }
+
+.content-interna h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ED9009;
+  padding-bottom: 15px; }
+
+.content-interna p {
+  line-height: 22px; }
+
+.content-interna .lista {
+  padding: 20px; }
+  .content-interna .lista ul {
+    list-style: none; }
+
+.box-circle {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 35px 0; }
+  .box-circle .content-box {
+    border: 1px solid #579F33;
+    width: 250px; }
+    .box-circle .content-box p.mde-box {
+      padding: 55px 0 15px;
+      color: #579f33; }
+    .box-circle .content-box .circle {
+      background-color: #579F33;
+      border-radius: 50%;
+      height: 70px;
+      width: 70px;
+      margin: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: absolute;
+      left: 105px;
+      top: -34px; }
+      .box-circle .content-box .circle .borde-line {
+        border: solid 1px #fff;
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .box-circle .content-box .circle .borde-line p {
+          text-align: center;
+          line-height: 16px;
+          color: #fff;
+          font-size: 30px;
+          font-weight: bold; }

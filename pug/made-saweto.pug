@@ -1,0 +1,150 @@
+doctype html
+html
+	head
+		include base/head.pug
+	body 
+		include base/header.pug
+
+		section.menu
+
+				nav.navbar.navbar-default
+					.container
+						// Brand and toggle get grouped for better mobile display
+						.navbar-header
+							button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+								span.sr-only Toggle navigation
+								span.icon-bar
+								span.icon-bar
+								span.icon-bar
+							.redes-seeker.collapsed
+								ul.social-in
+									li
+										a(href='#')
+											i.facebook  
+									li
+										a(href='#')
+											i.twitter  
+									li
+										a(href='#')
+											i.youtube  
+									li
+										a(href='#')
+											i.rs  
+						// Collect the nav links, forms, and other content for toggling
+						#bs-example-navbar-collapse-1.collapse.navbar-collapse
+							ul.nav-flex
+								li
+									a(href='index2.html') MADE SAWETO
+								li
+									a(href='#') TERRITORIALIDAD
+								li
+									a(href='#') MANEJO FORESTAL
+								li
+									a(href='#') GOBERNANZA
+								li
+									a(href='#') ALIANZAS
+								li
+									a(href='#') COMUNICACIONES
+								li
+									a(href='#') TRANSPARENCIA
+						// /.navbar-collapse
+					// /.container-fluid
+
+		section.banner-comun
+			img.width-100(src="images/banner/banner-4.jpg")
+		section.body-internas
+			.container
+				.row
+					.col-md-3.menu-lateral
+						.section-principal
+							h1 MDE SAWETO
+						.subsecciones
+							ul
+								li  
+									a(href="").item-sub
+										.circle-item
+										p Quienes somos
+
+								li  
+									a(href="").item-sub
+										.circle-item
+										p Objetivo y metas
+
+								li  
+									a(href="").item-sub
+										.circle-item
+										p CDN
+
+								li  
+									a(href="").item-sub
+										.circle-item
+										p ANE
+								li  
+									a(href="").item-sub
+										.circle-item
+										p AIDESEP
+
+								li  
+									a(href="").item-sub
+										.circle-item
+										p Ejecutores de Sub Proyectos
+
+								li  
+									a(href="").item-sub
+										.circle-item
+										p Convocatoria MDE
+
+								li  
+									a(href="").item-sub
+										.circle-item
+										p Proyectos Financiados
+
+					.col-md-9.content-interna
+							h2 MDE SAWETO
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							br
+							img.width-100(src="images/fondo_suscribise.jpg")
+							br
+					
+							.lista
+								ul 
+									li Lorem ipsum dolor sit amet, consectetur adipisicing elit, olore magna aliqua.
+									li Lorem ipsum ore magna aliqua.
+									li Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor a aliqua.
+
+							.box-circle
+								.col-md-4.col-sm-6
+									.content-box
+										.circle
+											.borde-line
+												p 1								
+										p.mde-box Salvaguardas
+								.col-md-4.col-sm-6
+									.content-box
+										.circle
+											.borde-line
+												p 2								
+										p.mde-box Salvaguardas
+								.col-md-4.col-sm-6
+									.content-box
+										.circle
+											.borde-line
+												p 3								
+										p.mde-box Salvaguardas
+							p Ademas de cumplir con:
+							.box-circle
+								.col-md-4.col-sm-6
+									.content-box
+										.circle
+											.borde-line
+												p 1								
+										p.mde-box Salvaguardas
+								.col-md-4.col-sm-6
+									.content-box
+										.circle
+											.borde-line
+												p 2								
+										p.mde-box Salvaguardas
+
+
+		include base/footer.pug

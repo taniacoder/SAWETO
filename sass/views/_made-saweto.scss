@@ -1,0 +1,119 @@
+/*interna1 MDE SAWETO*/
+.body-internas {
+    padding: 40px 0 40px;
+    .section-principal {
+        text-align: center;
+        background: #387014;
+        color: #fff;
+        padding: 10px;
+        h1 {
+            font-size: 21px;
+            font-weight: bold;
+        }
+    }
+    .subsecciones {
+        background-color: #F2F2F2;
+        ul {
+            list-style: none;
+             a {
+                padding: 6px 0;
+                color: #000;
+                display: flex;
+                    &:hover, &:focus, {
+                        text-decoration: none;
+                        color: #fff;
+                        
+                    }
+                }
+            li {
+
+                font-weight: bold;
+                padding: 0 15px;
+                &:hover, &:focus, {
+                    text-decoration: none;
+                    background-color: #ED9009;
+                    color: #fff;
+                }
+            }
+            p{
+                padding: 10px 0;
+                margin: 0;
+                font-size: 13px;
+                 &:hover, &:focus, {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.item-sub {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+         &:hover, &:focus, {
+        color: #fff;
+    }
+}
+.content-interna {
+    h2 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #ED9009;
+        padding-bottom: 15px
+    }
+    p {
+        line-height: 22px;
+    }
+    .lista {
+            padding: 20px;
+
+        ul  {
+            list-style: none
+        }
+    }
+
+}
+.box-circle {
+    text-align: center;
+    display: flex;
+    padding: 35px 0;
+    .content-box {
+        border: 1px solid #579F33;
+            width: 250px;
+        p.mde-box {
+            padding: 55px 0 15px;
+            color: #579f33;
+        }
+        .circle {
+        background-color: #579F33;
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 105px;
+        top: -34px;
+        .borde-line {
+            border: solid 1px #fff;
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+            text-align: center;
+            line-height: 16px;
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+            }
+        }
+
+    }
+}
+
+
+}

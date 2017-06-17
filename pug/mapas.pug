@@ -2,11 +2,11 @@ doctype html
 html
 	head
 		include base/head.pug
+		link(href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css', rel='stylesheet')
 	body 
 		include base/header.pug
 
 		section.menu
-
 				nav.navbar.navbar-default
 					.container
 						// Brand and toggle get grouped for better mobile display
@@ -57,94 +57,74 @@ html
 				.row
 					.col-md-3.menu-lateral
 						.section-principal
-							h1 MDE SAWETO
+							h1 COMUNICACIONES
 						.subsecciones
 							ul
 								li  
 									a(href="").item-sub
 										i.fa.fa-circle 
-										p Quienes somos
+										p Fortalecimiento Comunicacional
 
 								li  
 									a(href="").item-sub
 										i.i.fa.fa-circle 
-										p Objetivo y metas
+										p Noticias
+
+								li.active
+									a(href="").item-sub
+										i.fa.fa-circle 
+										p Videos
 
 								li  
 									a(href="").item-sub
 										i.fa.fa-circle 
-										p CDN
+										p Plataforma Informativa
+								li  
+									a(href="").item-sub
+										i.fa.fa-circle 
+										p Publicaciones y Materiales
 
 								li  
 									a(href="").item-sub
 										i.fa.fa-circle 
-										p ANE
-								li  
-									a(href="").item-sub
-										i.fa.fa-circle 
-										p AIDESEP
+										p Boletines
 
 								li  
 									a(href="").item-sub
 										i.fa.fa-circle 
-										p Ejecutores de Sub Proyectos
+										p Multimedia
 
 								li  
-									a(href="").item-sub
-										i.fa.fa-circle 
-										p Convocatoria MDE
-
-								li 
 									a(href="made-saweto-pf.html#tablaonce").item-sub
 										i.fa.fa-circle 
 										p Proyectos Financiados
 
 					.col-md-9.content-interna
-						h2 MDE SAWETO
-						p
-							| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						br
-						img.width-100(src='images/fondo_suscribise.jpg')
-						br
-						.lista
-							ul
-								li Lorem ipsum dolor sit amet, consectetur adipisicing elit, olore magna aliqua.
-								li Lorem ipsum ore magna aliqua.
-								li
-									| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor a aliqua.
-						.box-circle
-							.col-md-4.col-sm-6
-								.content-box
-									.circle
-										.borde-line
-											p 1								
-									p.mde-box Salvaguardas
-							.col-md-4.col-sm-6
-								.content-box
-									.circle
-										.borde-line
-											p 2								
-									p.mde-box Salvaguardas
-							.col-md-4.col-sm-6
-								.content-box
-									.circle
-										.borde-line
-											p 3								
-									p.mde-box Salvaguardas
-						p Ademas de cumplir con:
-						.box-circle
-							.col-md-4.col-sm-6
-								.content-box
-									.circle
-										.borde-line
-											p 1								
-									p.mde-box Salvaguardas
-							.col-md-4.col-sm-6
-								.content-box
-									.circle
-										.borde-line
-											p 2								
-									p.mde-box Salvaguardas
+						// LISTO PARA MAQUETAR
+						h2 MAPAS
+						#map-tooltips-js.map
+						// <div id='info' class='info'></div>
+						aside#first-modal.tinymodal-window.text-left(data-size='40%,45%', data-newclass='photo')
+							#close
+								a.tinymodal-close.pull-right
+									| Salir  
+									span X
+							.tinymodal-inner
+								#content
+									.row.mg-0
+										.col-md-12.box-pop-title
+											#nombre
+										.col-md-12.col-sm-9
+											.col-md-5
+												#image
+											.col-md-7
+												#description
+												#pdf_ficha
+												#pdf_mapa
+
 
 
 		include base/footer.pug
+	script(type='text/javascript', src='js/tinyModal.js')
+	script(src='http://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js')
+	script(src='js/map.js')

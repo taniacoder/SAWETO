@@ -26,6 +26,21 @@ body {
   .circle-item:hover, .circle-item:focus {
     border: 4px solid #fff; }
 
+i.fa.fa-circle {
+  color: #579f33;
+  font-size: 10px;
+  padding: 15px 10px 0 0; }
+  i.fa.fa-circle:hover, i.fa.fa-circle:focus, i.fa.fa-circle:active {
+    color: #fff; }
+
+.item-sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #ccc; }
+  .item-sub:hover, .item-sub:focus, .item-sub:active {
+    color: #fff; }
+
 section.header {
   padding: 30px 0 10px; }
 
@@ -1586,10 +1601,15 @@ p.dollar span.in-dollar{
 /*----*/
 /*interna1 MDE SAWETO*/
 .body-internas {
-  padding: 40px 0 40px; }
+  background-image: url(../images/bg-mde-saweto.jpg);
+  padding: 40px 0 40px;
+  background-repeat: no-repeat;
+  background-position: 0 100%; }
   .body-internas .section-principal {
+    background-image: url(../images/pastomenu.svg);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
     text-align: center;
-    background: #387014;
     color: #fff;
     padding: 10px; }
     .body-internas .section-principal h1 {
@@ -1605,13 +1625,13 @@ p.dollar span.in-dollar{
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
-        .body-internas .subsecciones ul a:hover, .body-internas .subsecciones ul a:focus {
+        .body-internas .subsecciones ul a:hover, .body-internas .subsecciones ul a:focus, .body-internas .subsecciones ul a:active {
           text-decoration: none;
           color: #fff; }
       .body-internas .subsecciones ul li {
         font-weight: bold;
         padding: 0 15px; }
-        .body-internas .subsecciones ul li:hover, .body-internas .subsecciones ul li:focus {
+        .body-internas .subsecciones ul li:hover, .body-internas .subsecciones ul li:focus, .body-internas .subsecciones ul li:active {
           text-decoration: none;
           background-color: #ED9009;
           color: #fff; }
@@ -1622,19 +1642,11 @@ p.dollar span.in-dollar{
         .body-internas .subsecciones ul p:hover, .body-internas .subsecciones ul p:focus {
           color: #fff; }
 
-.item-sub {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-bottom: 1px solid #ccc; }
-  .item-sub:hover, .item-sub:focus {
-    color: #fff; }
-
 .content-interna h2 {
   font-size: 20px;
   font-weight: bold;
   color: #ED9009;
-  padding-bottom: 15px; }
+  padding: 10px 0 25px; }
 
 .content-interna p {
   line-height: 22px; }
@@ -1694,3 +1706,276 @@ p.dollar span.in-dollar{
           color: #fff;
           font-size: 30px;
           font-weight: bold; }
+
+.menu-lateral .active {
+  background-color: #ED9009;
+  color: #fff; }
+  .menu-lateral .active i, .menu-lateral .active p {
+    color: #fff !important; }
+
+/*******PROYECTOS FINANCIEROS**********/
+select {
+  width: 30%;
+  height: 40px;
+  margin: 25px;
+  border: 1px solid #ccc;
+  float: right; }
+
+option {
+  display: block;
+  text-align: center; }
+
+td, th {
+  padding: 10px 20px;
+  text-align: center;
+  border: 2px solid #fff; }
+
+/**index38***PREGUNTAS FRECUENTES***/
+#accordion section, #accordion .pointer, #accordion h3, #accordion p {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
+#accordion {
+  margin-bottom: 30px; }
+
+#accordion h3 {
+  line-height: 1.2;
+  font-size: 20px;
+  background-color: #F4F6F3;
+  margin: 0;
+  padding: 10px 10px 10px 30px; }
+
+#accordion h3 a {
+  color: #000;
+  text-decoration: none; }
+
+#accordion section {
+  overflow: hidden;
+  height: 220px;
+  background-color: #F8FAF9;
+  border-top: 1px solid #fff; }
+
+#accordion p {
+  padding: 0 10px;
+  color: black; }
+
+#accordion section.ac_hidden p:not(.pointer) {
+  color: #fff; }
+
+#accordion section.ac_hidden {
+  height: 44px; }
+
+#accordion .pointer {
+  padding: 0;
+  margin: 10px 0 0 6px;
+  line-height: 20px;
+  width: 13px;
+  position: absolute;
+  color: #000; }
+
+#accordion section:not(.ac_hidden) h3 {
+  background-color: #579f33; }
+
+#accordion section:not(.ac_hidden) a {
+  color: #fff; }
+
+#accordion section:not(.ac_hidden) .pointer {
+  color: #fff; }
+
+#accordion section:not(.ac_hidden) .pointer {
+  display: block;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  padding: 0; }
+
+/**index30***VIDEOS***/
+.bloques a {
+  text-decoration: none; }
+  .bloques a:hover {
+    text-decoration: none; }
+
+#trailer .modal-dialog {
+  margin-top: 200px;
+  width: 640px;
+  height: 480px; }
+
+.hanging-close {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  z-index: 9001; }
+
+#trailer-video {
+  width: 100%;
+  height: 100%;
+  padding-left: 0;
+  margin: 0; }
+
+.movie-tile {
+  display: block !important; }
+
+.scale-media {
+  padding-bottom: 56.25%;
+  position: relative; }
+
+.scale-media iframe {
+  border: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: white; }
+
+.box-orange-video {
+  background: rgba(249, 172, 90, 0.66);
+  height: 140px;
+  position: absolute;
+  width: 242px;
+  top: 0; }
+
+.fa.fa-play-circle.fa-2x {
+  position: absolute;
+  top: 60px;
+  left: 122px;
+  color: #fff; }
+
+.movie-tile p {
+  color: #29201b;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px 0; }
+  .movie-tile p:hover {
+    text-decoration: none; }
+
+/**index30***NOTICIA***/
+.wrapper {
+  margin: 60px auto;
+  text-align: center; }
+
+h1 {
+  margin-bottom: 1.25em; }
+
+#pagination-demo {
+  display: inline-block;
+  margin-bottom: 1.75em; }
+
+#pagination-demo li {
+  display: inline-block; }
+
+.page-content {
+  background: #eee;
+  display: inline-block;
+  padding: 10px;
+  width: 100%;
+  max-width: 660px; }
+
+#banner-carousel.carousel .carousel-indicators {
+  position: absolute;
+  bottom: -50px; }
+
+#banner-carousel.carousel .carousel-inner .item {
+  opacity: 1;
+  -webkit-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out; }
+
+/**index39***MAPAS**/
+.map {
+  height: 600px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 21px; }
+
+.tinymodal-cover {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0; }
+
+.tinymodal-window {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2; }
+
+.tinymodal-inner {
+  position: relative;
+  height: 100%;
+  overflow-y: hidden;
+  width: 100%;
+  bottom: 31px; }
+
+.tinymodal-active .tinymodal-cover {
+  visibility: visible;
+  opacity: 1; }
+
+.tinymodal-active .tinymodal-window-open {
+  visibility: visible;
+  opacity: 1; }
+
+/*!
+   * Base Design
+   * can be overriden by your own styles in this or your stylesheed
+  **/
+#first-modal {
+  box-sizing: content-box; }
+
+.tinymodal-cover {
+  background: rgba(0, 0, 0, 0.7); }
+
+.tinymodal-window {
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 20px;
+  border-radius: 3px;
+  color: #333;
+  -webkit-transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(0.9); }
+
+.tinymodal-active .tinymodal-window-open {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1); }
+
+.tinymodal-window-open .tinymodal-close,
+.tinymodal-window-open a {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 3px 14px;
+  cursor: pointer; }
+
+.tinymodal-ready .tinymodal-window,
+.tinymodal-ready .tinymodal-cover {
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out; }
+
+#close {
+  position: relative;
+  bottom: 63px;
+  left: 18px; }
+
+.fa {
+  color: black; }
+
+.download {
+  color: black !important; }
+
+.box-pop-title {
+  height: 50px;
+  background-color: #3F7B17;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 5%; }
+
+#nombre {
+  padding: 10px;
+  font-size: 20px; }

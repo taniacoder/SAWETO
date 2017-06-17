@@ -1,0 +1,319 @@
+doctype html
+html
+	head
+		include base/head.pug
+	body 
+		include base/header.pug
+
+		section.menu
+
+				nav.navbar.navbar-default
+					.container
+						// Brand and toggle get grouped for better mobile display
+						.navbar-header
+							button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+								span.sr-only Toggle navigation
+								span.icon-bar
+								span.icon-bar
+								span.icon-bar
+							.redes-seeker.collapsed
+								ul.social-in
+									li
+										a(href='#')
+											i.facebook  
+									li
+										a(href='#')
+											i.twitter  
+									li
+										a(href='#')
+											i.youtube  
+									li
+										a(href='#')
+											i.rs  
+						// Collect the nav links, forms, and other content for toggling
+						#bs-example-navbar-collapse-1.collapse.navbar-collapse
+							ul.nav-flex
+								li
+									a(href='made-saweto.html') MADE SAWETO
+								li
+									a(href='#') TERRITORIALIDAD
+								li
+									a(href='#') MANEJO FORESTAL
+								li
+									a(href='#') GOBERNANZA
+								li
+									a(href='#') ALIANZAS
+								li
+									a(href='#') COMUNICACIONES
+								li
+									a(href='#') TRANSPARENCIA
+						// /.navbar-collapse
+					// /.container-fluid
+
+		section.banner-comun
+			img.width-100(src="images/mde-saweto/banner-mde saweto.jpg")
+		section.body-internas
+			.container
+				.row
+					.col-md-3.menu-lateral
+						.section-principal
+							h1 MDE SAWETO
+						.subsecciones
+							ul
+								li  
+									a(href="").item-sub
+										i.fa.fa-circle 
+										p Quienes somos
+
+								li  
+									a(href="").item-sub
+										i.i.fa.fa-circle 
+										p Objetivo y metas
+
+								li  
+									a(href="").item-sub
+										i.fa.fa-circle 
+										p CDN
+
+								li  
+									a(href="").item-sub
+										i.fa.fa-circle 
+										p ANE
+								li  
+									a(href="").item-sub
+										i.fa.fa-circle 
+										p AIDESEP
+
+								li  
+									a(href="").item-sub
+										i.fa.fa-circle 
+										p Ejecutores de Sub Proyectos
+
+								li  
+									a(href="").item-sub
+										i.fa.fa-circle 
+										p Convocatoria MDE
+
+								li.active  
+									a(href="made-saweto-pf.html#tablaonce").item-sub
+										i.fa.fa-circle 
+										p Proyectos Financiados
+
+					.col-md-9.content-interna
+							h2 MDE SAWETO
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  consequat. 
+							br
+							select
+								option(value="0") Seleccionar año
+								option(value="0") 2017
+								option(value="0") 2016
+								option(value="0") 2015
+								option(value="0") 2014
+								option(value="0") 2013
+								option(value="0") 2012
+								option(value="0") 2011
+					#tablaonce
+						table(border="2" cellspacing="5" cellpadding="5" align="center" style="background-color: #F2F7F3; border-color: #fff;" )
+							tr 
+								th(colspan="7" style="background-color: #417D1B; color: #fff;") SUBPROYECTOS 1RA CONVOCATORIA
+							tr(style="background-color: #579F33; color: #fff;")  
+								td(rowspan="2") REGION
+								td(rowspan="2") EJECUTORES DE PROYECTOS
+								td(rowspan="2") RECONOCIMIENTO
+								td(rowspan="2") TITULACION
+								td(colspan="2") MFC
+								td(rowspan="2") No. TOTALA DE CN
+							tr(style="background-color: #579F33; color: #fff;")   
+								td No. PROPUESTAS
+								td No. CN
+	
+							tr  
+								td(rowspan="2" style="background-color: #EACF0C;") Amazonia
+								td OCCAAM
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr  
+								td ORPIAN
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr(style="background-color: #ED8C01; border-bottom: 10px solid; color: #fff;")
+								td(style="background-color: #fff;")
+								td Subtotal Amazonas
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr  
+								td(style="background-color: #EACF0C;") San Martin
+								td OCCAAM
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr(style="background-color: #ED8C01; border-bottom: 10px solid; color: #fff;")
+								td(style="background-color: #fff;")
+								td Subtotal San Martin
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr  
+								td(rowspan="5" style="background-color: #EACF0C;") Loreto
+								td OCCAAM
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr  
+								td OCCAAM
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr  
+								td OCCAAM
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr  
+								td OCCAAM
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr  
+								td OCCAAM
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr(style="background-color: #ED8C01; border-bottom: 10px solid; color: #fff;")  
+								td(style="background-color: #fff;")
+								td Subtotal Loreto
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr  
+								td(rowspan="4" style="background-color: #EACF0C;") Selva Central
+								td OCCAAM
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr  
+								td OCCAAM
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr  
+								td OCCAAM
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr  
+								td OCCAAM
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr(style="background-color: #ED8C01; border-bottom: 10px solid; color: #fff;")  
+								td(style="background-color: #fff;")
+								td Subtotal Selva Central
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr  
+								td(rowspan="4" style="background-color: #EACF0C;") Ucayali
+								td OCCAAM
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr  
+								td OCCAAM
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr  
+								td OCCAAM
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr  
+								td OCCAAM
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr(style="background-color: #ED8C01; border-bottom: 10px solid; color: #fff;")  
+								td(style="background-color: #fff;")
+								td Subtotal Ucayali
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr  
+								td(style="background-color: #EACF0C;") Cusco
+								td OCCAAM
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr  
+								td(style="background-color: #EACF0C;") MDD
+								td OCCAAM
+								td 2
+								td 2
+								td 1
+								td 4
+								td 8
+							tr(style="background-color: #432918; color: #fff;")  
+								td(style="background-color: #fff;")
+								td N° Total de CCNN
+								td 149
+								td 24
+								td -
+								td 33
+								td 208
+							tr(style="background-color: #432918; color: #fff;")  
+								td(style="background-color: #fff;")
+								td Totala subproyectos
+								td 13
+								td 10
+								td 10
+								td -
+								td 33
+		include base/footer.pug

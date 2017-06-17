@@ -1,0 +1,160 @@
+doctype html
+html
+	head
+		include base/head.pug
+	body 
+		include base/header.pug
+
+		section.menu
+
+				nav.navbar.navbar-default
+					.container
+						// Brand and toggle get grouped for better mobile display
+						.navbar-header
+							button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+								span.sr-only Toggle navigation
+								span.icon-bar
+								span.icon-bar
+								span.icon-bar
+							.redes-seeker.collapsed
+								ul.social-in
+									li
+										a(href='#')
+											i.facebook  
+									li
+										a(href='#')
+											i.twitter  
+									li
+										a(href='#')
+											i.youtube  
+									li
+										a(href='#')
+											i.rs  
+						// Collect the nav links, forms, and other content for toggling
+						#bs-example-navbar-collapse-1.collapse.navbar-collapse
+							ul.nav-flex
+								li
+									a(href='made-saweto.html') MADE SAWETO
+								li
+									a(href='#') TERRITORIALIDAD
+								li
+									a(href='#') MANEJO FORESTAL
+								li
+									a(href='#') GOBERNANZA
+								li
+									a(href='#') ALIANZAS
+								li
+									a(href='#') COMUNICACIONES
+								li
+									a(href='#') TRANSPARENCIA
+						// /.navbar-collapse
+					// /.container-fluid
+
+		section.banner-comun
+			img.width-100(src="images/mde-saweto/banner-mde saweto.jpg")
+		section.body-internas
+			.container
+				.row
+					.col-md-3.menu-lateral
+						.section-principal
+							h1 COMUNICACIONES
+						.subsecciones
+							ul
+								li  
+									a(href="").item-sub
+										i.fa.fa-circle 
+										p Fortalecimiento Comunicacional
+
+								li  
+									a(href="").item-sub
+										i.i.fa.fa-circle 
+										p Noticias
+
+								li.active
+									a(href="").item-sub
+										i.fa.fa-circle 
+										p Videos
+
+								li  
+									a(href="").item-sub
+										i.fa.fa-circle 
+										p Plataforma Informativa
+								li  
+									a(href="").item-sub
+										i.fa.fa-circle 
+										p Publicaciones y Materiales
+
+								li  
+									a(href="").item-sub
+										i.fa.fa-circle 
+										p Boletines
+
+								li  
+									a(href="").item-sub
+										i.fa.fa-circle 
+										p Multimedia
+
+								li  
+									a(href="made-saweto-pf.html#tablaonce").item-sub
+										i.fa.fa-circle 
+										p Proyectos Financiados
+
+					.col-md-9.content-interna
+						// LISTO PARA MAQUETAR
+						h2 Videos
+						.bloques.col-sm-12
+							.col-sm-4.item
+								figure
+									a.movie-tile(data-trailer-youtube-id='OSQyWUmba4E', data-toggle='modal', href='#trailer')
+										img(src='http://localhost:88/imagenes-saweto/productos/149682769001.jpg', alt='Lorem Ipsum Dolor mein at', height='140', width='100%')
+										.box-orange-video
+										i.fa.fa-play-circle.fa-2x(aria-hidden="true")
+										p Lorem Ipsum Dolor mein at
+							.col-sm-4.item
+								figure
+									a.movie-tile(data-trailer-youtube-id='OSQyWUmba4E', data-toggle='modal', href='#trailer')
+										img(src='http://localhost:88/imagenes-saweto/productos/149682769001.jpg', alt='Lorem Ipsum Dolor mein at', height='140', width='100%')
+										.box-orange-video
+										i.fa.fa-play-circle.fa-2x(aria-hidden="true")
+										p Lorem Ipsum Dolor mein at
+							.col-sm-4.item
+								figure
+									a.movie-tile(data-trailer-youtube-id='OSQyWUmba4E', data-toggle='modal', href='#trailer')
+										img(src='http://localhost:88/imagenes-saweto/productos/149682769001.jpg', alt='Lorem Ipsum Dolor mein at', height='140', width='100%')
+										.box-orange-video
+										i.fa.fa-play-circle.fa-2x(aria-hidden="true")
+										p Lorem Ipsum Dolor mein at
+						.bloques.col-sm-12
+							.col-sm-4.item
+								figure
+									a.movie-tile(data-trailer-youtube-id='OSQyWUmba4E', data-toggle='modal', href='#trailer')
+										img(src='http://localhost:88/imagenes-saweto/productos/149682769001.jpg', alt='Lorem Ipsum Dolor mein at', height='140', width='100%')
+										.box-orange-video
+										i.fa.fa-play-circle.fa-2x(aria-hidden="true")
+										p Lorem Ipsum Dolor mein at
+							.col-sm-4.item
+								figure
+									a.movie-tile(data-trailer-youtube-id='OSQyWUmba4E', data-toggle='modal', href='#trailer')
+										img(src='http://localhost:88/imagenes-saweto/productos/149682769001.jpg', alt='Lorem Ipsum Dolor mein at', height='140', width='100%')
+										.box-orange-video
+										i.fa.fa-play-circle.fa-2x(aria-hidden="true")
+										p Lorem Ipsum Dolor mein at
+							.col-sm-4.item
+								figure
+									a.movie-tile(data-trailer-youtube-id='OSQyWUmba4E', data-toggle='modal', href='#trailer')
+										img(src='http://localhost:88/imagenes-saweto/productos/149682769001.jpg', alt='Lorem Ipsum Dolor mein at', height='140', width='100%')
+										.box-orange-video
+										i.fa.fa-play-circle.fa-2x(aria-hidden="true")
+										p Lorem Ipsum Dolor mein at
+
+
+
+							// Trailer Video Modal
+							#trailer.modal
+								.modal-dialog
+									.modal-content
+										a.hanging-close(href='#', data-dismiss='modal', aria-hidden='true')
+											img(src='https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24')
+										#trailer-video-container.scale-media
+
+		include base/footer.pug

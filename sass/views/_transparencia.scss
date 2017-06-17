@@ -1,0 +1,64 @@
+/**index38***PREGUNTAS FRECUENTES***/
+#accordion section, #accordion .pointer, #accordion h3, #accordion p {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+#accordion {
+  margin-bottom:30px;
+}
+#accordion h3 {
+  line-height:1.2;
+  font-size:20px;
+  background-color: #F4F6F3;
+  margin:0;
+  padding: 10px 10px 10px 30px;
+}
+
+#accordion h3 a {
+  color: #000;
+  text-decoration: none;
+}
+#accordion section {
+  overflow:hidden;
+  height:220px;
+  background-color: #F8FAF9;
+  border-top: 1px solid #fff;
+}
+#accordion p {
+  padding:0 10px;
+  color:black;
+}
+#accordion section.ac_hidden p:not(.pointer) {
+  color:#fff;
+}
+
+#accordion section.ac_hidden {
+  height:44px;
+}
+#accordion .pointer {
+  padding:0;
+  margin:10px 0 0 6px;
+  line-height:20px;
+  width:13px;
+  position:absolute;
+  color:#000;
+}
+#accordion section:not(.ac_hidden) h3 {
+  background-color: #579f33;
+}
+#accordion section:not(.ac_hidden) a {
+   color: #fff;
+}
+#accordion section:not(.ac_hidden) .pointer {
+   color: #fff;
+}
+#accordion section:not(.ac_hidden) .pointer {
+  display:block;
+  -webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -o-transform:rotate(90deg);
+  transform:rotate(90deg);
+  padding:0;
+}

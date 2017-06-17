@@ -32,6 +32,7 @@
     <script src="js/bootstrap.min.js"></script>
     <!--script(src='http://code.jquery.com/jquery-1.9.1.min.js')-->
     <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+    <link href="https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css" rel="stylesheet">
   </head>
   <body> 
     <section class="header">
@@ -98,94 +99,56 @@
         <div class="row">
           <div class="col-md-3 menu-lateral">
             <div class="section-principal">
-              <h1>MDE SAWETO</h1>
+              <h1>COMUNICACIONES</h1>
             </div>
             <div class="subsecciones">
               <ul>
                 <li> <a class="item-sub" href=""><i class="fa fa-circle"> </i>
-                    <p>Quienes somos</p></a></li>
+                    <p>Fortalecimiento Comunicacional</p></a></li>
                 <li> <a class="item-sub" href=""><i class="i fa fa-circle"> </i>
-                    <p>Objetivo y metas</p></a></li>
+                    <p>Noticias</p></a></li>
+                <li class="active"><a class="item-sub" href=""><i class="fa fa-circle"> </i>
+                    <p>Videos</p></a></li>
                 <li> <a class="item-sub" href=""><i class="fa fa-circle"> </i>
-                    <p>CDN</p></a></li>
+                    <p>Plataforma Informativa</p></a></li>
                 <li> <a class="item-sub" href=""><i class="fa fa-circle"> </i>
-                    <p>ANE</p></a></li>
+                    <p>Publicaciones y Materiales</p></a></li>
                 <li> <a class="item-sub" href=""><i class="fa fa-circle"> </i>
-                    <p>AIDESEP</p></a></li>
+                    <p>Boletines</p></a></li>
                 <li> <a class="item-sub" href=""><i class="fa fa-circle"> </i>
-                    <p>Ejecutores de Sub Proyectos</p></a></li>
-                <li> <a class="item-sub" href=""><i class="fa fa-circle"> </i>
-                    <p>Convocatoria MDE</p></a></li>
+                    <p>Multimedia</p></a></li>
                 <li> <a class="item-sub" href="made-saweto-pf.html#tablaonce"><i class="fa fa-circle"> </i>
                     <p>Proyectos Financiados</p></a></li>
               </ul>
             </div>
           </div>
           <div class="col-md-9 content-interna">
-            <h2>MDE SAWETO</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br><img class="width-100" src="images/fondo_suscribise.jpg"><br>
-            <div class="lista">
-              <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, olore magna aliqua.</li>
-                <li>Lorem ipsum ore magna aliqua.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor a aliqua.</li>
-              </ul>
-            </div>
-            <div class="box-circle">
-              <div class="col-md-4 col-sm-6">
-                <div class="content-box">
-                  <div class="circle">
-                    <div class="borde-line">
-                      <p>1								</p>
+            <!-- LISTO PARA MAQUETAR-->
+            <h2>MAPAS</h2>
+            <div class="map" id="map-tooltips-js"></div>
+            <!-- <div id='info' class='info'></div>-->
+            <aside class="tinymodal-window text-left" id="first-modal" data-size="40%,45%" data-newclass="photo">
+              <div id="close"><a class="tinymodal-close pull-right">Salir  <span>X</span></a></div>
+              <div class="tinymodal-inner">
+                <div id="content">
+                  <div class="row mg-0">
+                    <div class="col-md-12 box-pop-title">
+                      <div id="nombre"></div>
+                    </div>
+                    <div class="col-md-12 col-sm-9">
+                      <div class="col-md-5">
+                        <div id="image"></div>
+                      </div>
+                      <div class="col-md-7">
+                        <div id="description"></div>
+                        <div id="pdf_ficha"></div>
+                        <div id="pdf_mapa"></div>
+                      </div>
                     </div>
                   </div>
-                  <p class="mde-box">Salvaguardas</p>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="content-box">
-                  <div class="circle">
-                    <div class="borde-line">
-                      <p>2								</p>
-                    </div>
-                  </div>
-                  <p class="mde-box">Salvaguardas</p>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="content-box">
-                  <div class="circle">
-                    <div class="borde-line">
-                      <p>3								</p>
-                    </div>
-                  </div>
-                  <p class="mde-box">Salvaguardas</p>
-                </div>
-              </div>
-            </div>
-            <p>Ademas de cumplir con:</p>
-            <div class="box-circle">
-              <div class="col-md-4 col-sm-6">
-                <div class="content-box">
-                  <div class="circle">
-                    <div class="borde-line">
-                      <p>1								</p>
-                    </div>
-                  </div>
-                  <p class="mde-box">Salvaguardas</p>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="content-box">
-                  <div class="circle">
-                    <div class="borde-line">
-                      <p>2								</p>
-                    </div>
-                  </div>
-                  <p class="mde-box">Salvaguardas</p>
-                </div>
-              </div>
-            </div>
+            </aside>
           </div>
         </div>
       </div>
@@ -238,4 +201,7 @@
       </div>
     </div>
   </body>
+  <script type="text/javascript" src="js/tinyModal.js"></script>
+  <script src="http://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js"></script>
+  <script src="js/map.js"></script>
 </html>
